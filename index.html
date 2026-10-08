@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日资讯报告 · 存档</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <h1>每日资讯报告</h1>
+  <div class="sub">7 只港股 · 3 个大宗商品 · 每日自动搜集整理</div>
+  <div class="meta" id="site-meta">正在加载…</div>
+</header>
+
+<div class="toolbar">
+  <input id="search" type="search" placeholder="搜索报告（公司名 / 关键词 / 日期如 2026-10-08）">
+  <select id="company-filter">
+    <option value="">全部标的</option>
+  </select>
+</div>
+
+<h2 class="sec">最新报告</h2>
+<div id="latest"></div>
+
+<h2 class="sec">历史归档</h2>
+<div id="archive"></div>
+
+<footer>
+  本站报告由自动化流程基于公开信息整理生成，仅供内部参考，不构成任何投资建议。<br>
+  数据来源：交易所披露、财经媒体、机构研报等公开渠道。投资有风险，决策需谨慎。
+</footer>
+
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>
