@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日推送 · 2026-10-11（周日盘点）</title>
+<style>
+:root{--bg:#f6d968;--card:#fdfbf3;--ink:#2b2b2b;--ink2:#5a5a5a;--ink3:#8a8a8a;--line:rgba(42,67,116,.18);
+--up:#c62828;--down:#2e7d32;--accent:#2a4374;--seal:#b64325;
+--green:#e8f5e9;--green-b:#2e7d32;--orange:#fff3e0;--orange-b:#b64325;
+--red:#fbe9e7;--red-b:#c62828;--blue:#e3f2fd;--blue-b:#2a4374;--grey:#f7f0dc;--grey-b:#616161;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);background-image:radial-gradient(circle at 20% 30%, rgba(255,255,255,.12) 0 2px, transparent 3px);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;font-size:14.5px;line-height:1.75}
+.wrap{max-width:1080px;margin:0 auto;padding:24px 18px 60px}
+.top{background:transparent;color:var(--accent);padding:10px 6px 18px;}
+.top h1{margin:0 0 8px;font-size:24px;letter-spacing:3px;color:var(--accent);font-weight:800}
+.top .tickers{font-size:13px;opacity:.85;line-height:1.9;color:var(--accent)}
+.top .gen{font-size:12.5px;opacity:.65;margin-top:10px;color:var(--accent)}
+.tags{margin-top:12px}
+.tag{display:inline-block;background:var(--card);border:1px solid var(--seal);color:var(--seal);border-radius:999px;padding:2px 12px;font-size:12.5px;margin-right:8px;margin-bottom:6px;font-weight:600}
+.base{background:var(--card);border:1px solid rgba(42,67,116,.25);border-radius:10px;padding:14px 18px;margin:18px 0;font-size:13px;color:#5d4037}
+h2.sec{font-size:19px;margin:34px 0 14px;padding-left:14px;border-left:6px solid var(--seal);color:var(--accent);letter-spacing:3px}
+h3.sub{font-size:15.5px;margin:22px 0 10px;color:var(--accent);font-weight:700}
+.card{background:var(--card);border:1px solid rgba(42,67,116,.12);border-radius:255px 18px 225px 18px/18px 225px 18px 255px;padding:18px 22px;margin-bottom:16px;box-shadow:3px 4px 0 rgba(120,80,20,.18);}
+table{width:100%;border-collapse:collapse;font-size:13.5px;margin:8px 0}
+th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+th{background:rgba(42,67,116,.08);color:var(--accent);font-weight:600;white-space:nowrap}
+td.num,th.num{text-align:right;white-space:nowrap}
+.up{color:var(--up);font-weight:600}.down{color:var(--down);font-weight:600}
+.pill{display:inline-block;border-radius:999px;padding:1px 10px;font-size:12px;margin:1px 3px 1px 0;white-space:nowrap}
+.p-red{background:var(--red);color:var(--red-b);border:1px solid #ef9a9a}
+.p-green{background:var(--green);color:var(--green-b);border:1px solid #a5d6a7}
+.p-orange{background:var(--orange);color:var(--orange-b);border:1px solid #ffcc80}
+.p-blue{background:var(--blue);color:var(--blue-b);border:1px solid #90caf9}
+.p-grey{background:var(--grey);color:var(--grey-b);border:1px solid #cfd8dc}
+.kpis{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin:10px 0}
+.kpi{background:var(--card);border:1px solid rgba(42,67,116,.12);border-radius:225px 14px 255px 14px/14px 255px 14px 225px;padding:12px 16px;box-shadow:2px 3px 0 rgba(120,80,20,.15)}
+.kpi .n{font-size:12.5px;color:var(--ink3)}
+.kpi .v{font-size:17px;font-weight:700;margin:2px 0}
+.kpi .d{font-size:12px;color:var(--ink2)}
+.box{border-radius:18px 225px 18px 255px/255px 18px 225px 18px;padding:14px 20px;margin:12px 0;font-size:13.5px}
+.box b.t{display:block;margin-bottom:6px;font-size:14px}
+.box-green{background:var(--green);border:1px solid #a5d6a7}.box-green b.t{color:var(--green-b)}
+.box-orange{background:var(--orange);border:1px solid #ffcc80}.box-orange b.t{color:var(--orange-b)}
+.conclusion{counter-reset:c}
+.conclusion li{margin-bottom:12px}
+.conclusion li::marker{font-weight:700;color:var(--accent)}
+.src{font-size:12px;color:var(--ink3)}
+footer{margin-top:36px;padding-top:16px;border-top:2px dashed rgba(42,67,116,.3);color:var(--ink3);font-size:12.5px;line-height:1.9}
+.back{display:inline-block;margin-bottom:14px;font-size:13.5px;color:var(--accent);text-decoration:none}
+.back:hover{text-decoration:underline}
+@media(max-width:640px){.wrap{padding:14px 10px 40px}.top{padding:20px}.top h1{font-size:18px}table{font-size:12px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<a class="back" href="../index.html">← 返回报告存档</a>
+
+<div class="top">
+<h1>每日推送 · 2026-10-11（周日盘点）</h1>
+<div class="tickers">海底捞 · 百胜中国 · 达势股份 · 中国食品 · 海吉亚医疗 · 同仁堂科技 · 保利物业 · 黄金 · 铁矿石 · 豆粕</div>
+<div class="tags">
+<span class="tag">下周双主线：CPI+美股Q3财报季开幕</span>
+<span class="tag">特朗普缓和伊朗表态，油价周五回落</span>
+<span class="tag">海通国际下调海底捞目标价</span>
+</div>
+<div class="gen">生成时间：2026年10月11日 18:15（GMT+8）｜行情数据：Wind（港股/A股/美股均为10-09收盘截面，今日周日休市）｜单文件 HTML 报告｜涨跌配色：中国惯例（红涨绿跌）</div>
+</div>
+
+<div class="base">
+<b>基准日说明：</b>今日（10-11）为周日，港股/A股/国内期货休市，行情数据沿用 <b>2026-10-09 收盘</b>：①港股（Wind 16:08–16:09截面）；②A股（Wind 15:00截面）；③国内期货（10-09收盘）；④美股（10-09收盘）；⑤国际大宗为10月9–11日数据，口径见正文标注。本期增量信息以 10-10~10-11 的新闻事件为主，行情表与前两期报告（同一基准日）一致。落在生成时点之后的重要事件列为待验证项，不纳入结论。
+</div>
+
+<h2 class="sec">一、今日核心结论</h2>
+<div class="card">
+<ol class="conclusion">
+<li><b>周日休市：行情沿用10-09收盘；下周是"数据+财报"双验证周——10月14日美国9月CPI（市场预期同比3.7%）定调加息路径，10月13日起美股Q3财报季开幕（标普500预期Q3盈利+30%）。</b>美股三大指数10-09齐涨、周线全红（标普再创收盘新高、年内+14%）；10年期美债周五尾盘5.24%（+0.5bp）、美元指数连续四周收高；CME FedWatch显示10月加息概率已降至约18%。</li>
+<li><b>油价周五回落但实物供应紧张未解：特朗普称"11月3日中期选举前不攻击伊朗"+俄罗斯拟增供柴油，地缘风险溢价回吐，布伦特周五盘中一度跌至103.36美元附近、周末报104.43美元。</b>但另一面：胡塞武装袭击沙特能源设施、霍尔木兹海峡"触雷爆炸"、波斯湾–东亚油轮运费较冲突前+540%、美国对伊朗新制裁（17艘船舶）、墨西哥湾飓风关停130万桶/日产能——Pepperstone称之为"双向市场"：地缘风险溢价与实物供应改善动态相互角力。</li>
+<li><b>黄金周末在4,193美元/盎司附近盘整，Kitco周度调查50%分析师看涨下周；10-14 CPI是决定加息预期的关键变量。</b>周五纽约金收4,193.87美元（+1.47%）、国内金价收904.38元/克（+15.04元）；14位华尔街分析师中50%看涨、36%看平、14%看跌，散户45%看涨、37%看跌、18%看平——专家偏多、散户分歧。</li>
+<li><b>个股层面本期唯一新增评级变化：海通国际下调海底捞目标价16.4→11.81港元（维持"优于大市"），称暑假翻台率回暖，预计2026–2028年归母净利41.2/44.5/47.6亿元。</b>其余6只港股本期无实质性新闻；海吉亚医疗本周三次回购（累计逾24万股）已连续第2期跟踪，本期无新增回购披露。</li>
+<li><b>黑色系与农产品：铁矿石机构分歧——华联期货"供增需弱、矿价反弹承压"（i2701参考680–720）vs 中钢网"利空阶段性释放、边际改善"（47港到港量环比-516.9万吨、铁水环比小增）；豆粕现货10-10普遍+20~30、10-11小幅回落，油厂库存129.64万吨（环比+10.5%），五矿期货提示9月USDA上调大豆产量43万吨至1.23亿吨压制盘面。</b></li>
+</ol>
+</div>
+
+<h2 class="sec">二、行情速览</h2>
+
+<h3 class="sub">2.1 港股与A股指数（Wind收盘，2026-10-09）</h3>
+<div class="card">
+<table>
+<tr><th>指数</th><th class="num">收盘</th><th class="num">涨跌点</th><th class="num">涨跌幅</th><th class="num">成交额</th><th>备注</th></tr>
+<tr><td>恒生指数</td><td class="num">24,211.35</td><td class="num up">+425.56</td><td class="num up">+1.79%</td><td class="num">2,092.0亿港元</td><td>5日累计+1.00%</td></tr>
+<tr><td>恒生科技指数</td><td class="num">4,197.84</td><td class="num up">+124.46</td><td class="num up">+3.06%</td><td class="num">505.0亿港元</td><td>5日累计+0.96%</td></tr>
+<tr><td>恒生中国企业指数</td><td class="num">8,147.87</td><td class="num up">+137.29</td><td class="num up">+1.71%</td><td class="num">—</td><td>Wind 16:08截面</td></tr>
+<tr><td>上证指数</td><td class="num">3,813.79</td><td class="num up">+1.89</td><td class="num up">+0.05%</td><td class="num">8,885.6亿元</td><td>震荡整理</td></tr>
+<tr><td>深证成指</td><td class="num">12,641.86</td><td class="num up">+20.96</td><td class="num up">+0.17%</td><td class="num">10,119.8亿元</td><td></td></tr>
+<tr><td>创业板指</td><td class="num">3,043.33</td><td class="num up">+6.67</td><td class="num up">+0.22%</td><td class="num">4,920.5亿元</td><td></td></tr>
+</table>
+<p class="src">港股 Wind 收盘截面（2026-10-09 16:08–16:09）；A股 Wind 收盘截面（2026-10-09 15:00）。美股 10-09 收盘：道琼斯 51,654.95（+0.83%）、标普500 7,811.51（+0.59%，逼近6日创下的历史收盘高点7,818.93）、纳斯达克综合 27,366.17（+0.64%）（工商时报10-11）；三大指数周线全红（道指+0.9%、标指+1.2%、纳指+0.6%），但费城半导体指数-0.41%收12,572.42、台积电ADR -1.02%。</p>
+</div>
+
+<h3 class="sub">2.2 目标池个股（Wind收盘，2026-10-09）</h3>
+<div class="card">
+<table>
+<tr><th>标的</th><th>代码</th><th class="num">收盘（港元）</th><th class="num">涨跌幅</th><th class="num">成交额</th><th class="num">市值（亿港元）</th><th class="num">股息率</th><th>备注</th></tr>
+<tr><td>海底捞</td><td>06862.HK</td><td class="num">9.570</td><td class="num up">+3.63%</td><td class="num">1.96亿</td><td class="num">533.43</td><td class="num">7.95%</td><td><span class="pill p-green">目标池涨幅第二</span><span class="pill p-orange">海通国际下调目标价</span> PE(TTM)11.42</td></tr>
+<tr><td>百胜中国</td><td>09987.HK</td><td class="num">340.40</td><td class="num up">+5.13%</td><td class="num">2.61亿</td><td class="num">1,153.38</td><td class="num">2.64%</td><td><span class="pill p-green">目标池领涨</span><span class="pill p-blue">持续回购+高盛上调目标价</span> PE(TTM)15.09</td></tr>
+<tr><td>达势股份</td><td>01405.HK</td><td class="num">29.78</td><td class="num up">+1.09%</td><td class="num">248万</td><td class="num">39.20</td><td class="num">—</td><td><span class="pill p-grey">本期无实质性新闻</span> PE(TTM)21.68</td></tr>
+<tr><td>中国食品</td><td>00506.HK</td><td class="num">3.775</td><td class="num up">+0.94%</td><td class="num">564万</td><td class="num">105.60</td><td class="num">4.69%</td><td><span class="pill p-grey">本期无实质性新闻</span> PE(TTM)10.11</td></tr>
+<tr><td>海吉亚医疗</td><td>06078.HK</td><td class="num">9.610</td><td class="num up">+1.26%</td><td class="num">941万</td><td class="num">59.44</td><td class="num">—</td><td><span class="pill p-blue">本周连续三次回购（本期无新增）</span> PE(TTM)29.52</td></tr>
+<tr><td>同仁堂科技</td><td>01666.HK</td><td class="num">3.045</td><td class="num up">+0.16%</td><td class="num">149万</td><td class="num">39.00</td><td class="num">6.80%</td><td><span class="pill p-grey">本期无新增新闻</span> PE(TTM)11.04</td></tr>
+<tr><td>保利物业</td><td>06049.HK</td><td class="num">27.68</td><td class="num up">+1.62%</td><td class="num">1,283万</td><td class="num">153.16</td><td class="num">5.81%</td><td><span class="pill p-grey">本期无实质性新闻</span> PE(TTM)8.35</td></tr>
+</table>
+<p class="src">港股行情为 Wind 收盘截面数据（2026-10-09 16:08–16:09，周日休市沿用周五收盘）；涨跌幅按前收盘价计算；市值为总市值口径（含限售股）。5日累计（10-09收盘）：百胜中国+7.25%、达势股份+5.75%、海底捞+4.08%、中国食品+2.58%、海吉亚医疗+2.23%、保利物业+1.10%、同仁堂科技-0.33%。百胜中国美股 YUMC 10-09收42.92美元（+2.73%，Wind）。</p>
+</div>
+
+<h3 class="sub">2.3 宏观与大宗 KPI</h3>
+<div class="kpis">
+<div class="kpi"><div class="n">现货黄金（Kitco）</div><div class="v">~$4,193/盎司</div><div class="d">10/11周末盘整，持平于周五收盘（越南VTC）</div></div>
+<div class="kpi"><div class="n">纽约金10-09</div><div class="v up">$4,193.87</div><div class="d">+1.47%（日媒리ファスタ/Trading Economics口径）</div></div>
+<div class="kpi"><div class="n">国内金价</div><div class="v up">904.38元/克</div><div class="d">10/9收，+15.04元（网易10-11 14:50）</div></div>
+<div class="kpi"><div class="n">Kitco周度调查</div><div class="v">50%分析师看涨</div><div class="d">14位分析师：50%涨/36%平/14%跌；散户45%涨（10-09）</div></div>
+<div class="kpi"><div class="n">10年期美债收益率</div><div class="v">5.24%</div><div class="d">周五尾盘+0.5bp（新华财经）；仍在24年高位附近</div></div>
+<div class="kpi"><div class="n">美元指数</div><div class="v up">连续四周收高</div><div class="d">约102.2（工商时报10-11）；创2025年5月来最长连涨</div></div>
+<div class="kpi"><div class="n">美国9月CPI预期</div><div class="v">同比3.7%</div><div class="d">10-14公布；巴克莱预测3.7%/环比+0.58%，大摩预测3.69%</div></div>
+<div class="kpi"><div class="n">CME FedWatch 10月加息概率</div><div class="v down">约18%</div><div class="d">此前一度70%；但年内再加息仍是基准情形（财联社10-11）</div></div>
+<div class="kpi"><div class="n">布伦特原油</div><div class="v">$104.43/桶</div><div class="d">10-11周末（FX168）；10-09收104.72，周五盘中曾跌至103.36</div></div>
+<div class="kpi"><div class="n">WTI原油</div><div class="v down">$91.85/桶</div><div class="d">10-09收盘+0.39%；周五盘中-0.8%至90.74附近</div></div>
+<div class="kpi"><div class="n">波斯湾–东亚油轮运费</div><div class="v up">~140万美元/日</div><div class="d">10/7 VLCC运费，较冲突前+540%（FX168）</div></div>
+<div class="kpi"><div class="n">铁矿石主力i2701</div><div class="v down">682.5元/吨</div><div class="d">10/9收盘，创年内新低；45港库存16480万吨（环比+69万吨）</div></div>
+<div class="kpi"><div class="n">豆粕现货</div><div class="v">3,350~3,550元/吨</div><div class="d">10-10普遍+20~30，10-11小幅回落-10~-20（网易行业报价）</div></div>
+<div class="kpi"><div class="n">油厂豆粕库存</div><div class="v down">129.64万吨</div><div class="d">环比+10.5%、同比+9.01%（大越期货10-09）</div></div>
+</div>
+
+<h2 class="sec">三、餐饮食品板块</h2>
+
+<h3 class="sub">3.1 海底捞（06862.HK）｜海通国际下调目标价至11.81港元（维持"优于大市"），本期唯一新增评级变化</h3>
+<div class="card">
+<p><b>新闻热点分析（本节核心）</b></p>
+<p><b>事件概述：</b>据TradingView转格隆汇10-09消息，海通国际发表研报：维持海底捞"优于大市"评级，目标价由16.4港元大幅下调至11.81港元，估值基准由2026年18.5倍PE切换至2027年13.5倍PE。该行指暑期旺季以来主品牌经营环比改善，预判暑假翻台率环比有所回暖、外卖延续高增长；预计2026–2028年收入分别约465亿、495亿及527亿元，归母净利润分别约41.2亿、44.5亿及47.6亿元，对应每股盈利约0.74、0.80及0.85元。</p>
+<p><b>背景/原因：</b>下调主因是估值方法与基准年切换（从2026年18.5倍切到2027年13.5倍），而非基本面恶化——研报对暑期翻台率回暖、外卖高增长均持正面判断。与大和此前下调目标价13.2→11.3港元（重申"跑赢大市"）方向一致，多家大行在国庆数据后进入"估值下修、评级维持"的复核窗口。</p>
+<p><b>对公司的影响：</b>①股价层面：10-09已+3.63%（目标池涨幅第二），新评级在周末发布，对10-12开盘构成边际压力；②基本面：2026年归母净利预测41.2亿元对应EPS 0.74元，与2025年约42.4亿元（Wind口径）基本持平，隐含利润零增长预期；③市场情绪：目标价从16.4→11.81（-28%）的降幅偏大，但维持"优于大市"缓释了信号烈度。</p>
+<p><b>后续跟踪点：</b>10-12开盘后股价对评级下调的消化程度；三季报/月度经营数据验证翻台率回暖；其他大行是否跟进下调目标价。</p>
+<p><b>基本面速览（极简）：</b>收报9.570港元（+3.63%），成交额1.96亿港元，换手率0.37%；PE(TTM)11.42倍，市值533.43亿港元，股息率7.95%（Wind）。</p>
+<div class="box box-green"><b class="t">分析框架</b>这是一次"评级不变、估值下修"的技术性调整：海通国际看好的仍是暑期翻台率回暖与外卖高增长，但把盈利预期基准后移到2027年并给了更低的倍数，隐含对2026年利润增速（几乎零增长）的谨慎。当前股价9.57港元距新目标价11.81港元仍有约23%空间，但PE 11.42倍+7.95%股息率的安全边际要打折——因为分母（盈利）被调低了。</div>
+<div class="box box-orange"><b class="t">风险提示</b>①2026年归母净利预测41.2亿元隐含同比零增长，若三季报不及预期评级可能再下调；②国庆预订+35%能否转化为翻台率与客单价回升仍是关键验证点；③其他大行若跟进下调目标价，将形成负向共振。</div>
+</div>
+
+<h3 class="sub">3.2 百胜中国（09987.HK）｜本期无新增实质性新闻，持续回购节奏待下周披露验证</h3>
+<div class="card">
+<p><b>新闻热点分析（本节核心）</b></p>
+<p><b>事件概述：</b>本期（10-10~10-11）无新增实质性新闻。最近披露仍为10-07的双市场回购（港交所2.46万股/789.46万港元+纽交所8.06万股/329.99万美元，拟注销；累计已回购854.73万股占授权2.47%）与高盛上调目标价至467港元（确信名单"买入"）。10-08/09是否延续回购的翌日披露尚未检索到（周末披露节奏放缓，下周一预计更新）。</p>
+<p><b>基本面速览（极简）：</b>收报340.40港元（+5.13%），成交额2.61亿港元，换手率0.23%；PE(TTM)15.09倍，市值1,153.38亿港元，股息率2.64%（Wind）。美股YUMC 10-09收42.92美元（+2.73%，Wind）。</p>
+<div class="box box-green"><b class="t">分析框架</b>信息真空期叠加股价高位（5日累计+7.25%为目标池最大）：回购的节奏验证是下周的关键——若10-08/09回购继续披露，说明公司在340港元上方仍在加码，底部托举信号延续；若暂停，则需警惕"利好兑现"后的回吐。高盛将Q3业绩预期定在11月初披露，10-12起的每个交易日都是预期发酵窗口。</div>
+<div class="box box-orange"><b class="t">风险提示</b>①若10-08/09回购披露缺席，连续性信号中断；②PE(TTM)15.09倍为餐饮板块最高，若市场风格转向低估值，弹性有限；③高盛Q3预测（经营利润+10.4%）11月初验证，预期差反噬风险仍在。</div>
+</div>
+
+<h3 class="sub">3.3 达势股份（01405.HK）｜本期无实质性新闻，+1.09%温和跟涨</h3>
+<div class="card">
+<p><b>新闻热点分析（本节核心）：</b>本期无实质性新闻。检索确认：10月8–11日无公告、无评级更新、无舆情事件；近期可查内容仅为2026-08-27的中报解读（营收31.34亿元+20.8%、归母净利8,105万元+22.9%、SSTG连续22个季度为正）与8月下旬的门店扩张报道（1550家店、非一线占比超65%，数据口径过期，未采用）。</p>
+<p><b>基本面速览（极简）：</b>收报29.78港元（+1.09%），成交额248万港元，换手率0.06%；PE(TTM)21.68倍，市值39.20亿港元，股息率—（Wind）。</p>
+<div class="box box-green"><b class="t">分析框架</b>连续第2期无增量信息：+1.09%纯属beta跟涨（国庆餐饮+9%数据带动板块情绪）。SSTG连续22个季度为正的内生增长逻辑未变，但缺乏新的催化剂，股价弹性弱于有明确增量的百胜中国/海底捞。</div>
+<div class="box box-orange"><b class="t">风险提示</b>①PE(TTM)21.68倍为目标池最高，若Q3增长不及预期估值承压；②外卖平台补贴大战延续，客单价修复节奏不确定；③无独立资讯期间流动性偏低（成交额仅248万港元）。</div>
+</div>
+
+<h3 class="sub">3.4 中国食品（00506.HK）｜本期无实质性新闻，+0.94%随行就市</h3>
+<div class="card">
+<p><b>新闻热点分析（本节核心）：</b>本期无实质性新闻。检索确认：10月初仅常规披露——9月股份变动月报表（股本27.97亿股、无变动，公告日10-05）与9月17日中报刊发通函；无评级、无经营类新闻。</p>
+<p><b>基本面速览（极简）：</b>收报3.775港元（+0.94%），成交额564万港元，换手率0.05%；PE(TTM)10.11倍，市值105.60亿港元，股息率4.69%（Wind）。</p>
+<div class="box box-green"><b class="t">分析框架</b>典型的防御型跟涨：PE 10.11倍、股息率4.69%，在消费整体偏弱环境下保持稳健。公司基本面锚定可口可乐装瓶业务的现金流，缺乏弹性但下行保护较好；本期涨幅基本与板块同步，无超额逻辑。</div>
+<div class="box box-orange"><b class="t">风险提示</b>①传统消费需求偏弱，收入增速低单位数，缺乏增长催化；②本期无独立资讯，信息透明度低于同板块其他标的；③若市场风格转向高弹性成长，防御属性可能跑输。</div>
+</div>
+
+<h2 class="sec">四、医疗服务与中药板块</h2>
+
+<h3 class="sub">4.1 海吉亚医疗（06078.HK）｜本周三次回购已连续第2期跟踪，本期无新增回购披露</h3>
+<div class="card">
+<p><b>新闻热点分析（本节核心）</b></p>
+<p><b>事件概述：</b>本期（10-10~10-11）无新增回购披露、无其他新闻。最近的三次回购仍为10-02（2.68万股/25.14万港元）、10-05（21.4万股/199.93万港元）、10-07（2,200股/20,460港元），累计逾24万股；累计已回购552.54万股（占授权日已发行股本0.9092%），所购股份拟持作库存股。10-08/09的回购翌日披露（如有）预计下周一更新。</p>
+<p><b>基本面速览（极简）：</b>收报9.610港元（+1.26%），成交额941万港元，换手率0.16%；PE(TTM)29.52倍，市值59.44亿港元，股息率—（Wind）。</p>
+<div class="box box-green"><b class="t">分析框架</b>回购节奏进入观察窗口：本周三次的密度明显高于9月的零星节奏，若10-08/09继续披露，回购加码的趋势确认，底部信号强化；若暂停，则"三连回购"可能只是假期前后的集中操作。核心逻辑仍是"以价换量的底部磨底"，PB(LF)仅0.74倍处于历史低位区间。</div>
+<div class="box box-orange"><b class="t">风险提示</b>①DRG支付改革深化，单位营收下行压力未除；②营收同比仍为负（-1.44%），利润增长主要来自费用压缩与毛利率修复，可持续性待验证；③回购累计比例不足1%，托底力度有限。</div>
+</div>
+
+<h3 class="sub">4.2 同仁堂科技（01666.HK）｜本期无新增新闻，定志丸获批进入跟踪期</h3>
+<div class="card">
+<p><b>新闻热点分析（本节核心）</b></p>
+<p><b>事件概述：</b>本期无新增新闻。上期的"定志丸获香港销售许可"（累计研发投入约80万港元、暂未上市销售、公司称暂无重大影响）进入跟踪期：后续看点是同仁堂国药在香港的实际上市销售时间表与放量情况。10月7日的常规月报表（9月股本无变动、公众持股量符合25%要求）已覆盖。</p>
+<p><b>基本面速览（极简）：</b>收报3.045港元（+0.16%），成交额149万港元，换手率0.08%；PE(TTM)11.04倍，市值39.00亿港元（流通市值19.14亿），股息率6.80%（Wind）。</p>
+<div class="box box-green"><b class="t">分析框架</b>连续第2期无实质性增量：6.80%的高股息率与低PB构成安全边际，但缺乏催化。定志丸获批的信号意义（产品线扩张、出海注册推进）大于短期业绩实质；成交额149万港元显示资金关注度仍处冰点，左侧布局属性强于右侧交易。</div>
+<div class="box box-orange"><b class="t">风险提示</b>①成交量持续低迷，流动性风险；②中药行业政策与集采不确定性；③公司已明确提示暂无重大影响，勿过度解读为业绩催化。</div>
+</div>
+
+<h2 class="sec">五、物业服务板块</h2>
+
+<h3 class="sub">5.1 保利物业（06049.HK）｜本期无实质性新闻，+1.62%稳健跟涨</h3>
+<div class="card">
+<p><b>新闻热点分析（本节核心）：</b>本期无实质性新闻。检索确认：10月初仅常规月报表（截至9月30日股份总数无变动，公告日10-05）；最近的机构评级为东方证券2026-09-25（维持买入、目标价下调至38.50港元，H1营收88.29亿元+5.2%、归母净利9.33亿元+4.8%），在检索窗口之外。</p>
+<p><b>基本面速览（极简）：</b>收报27.68港元（+1.62%），成交额1,283万港元，换手率0.13%；PE(TTM)8.35倍（目标池最低），市值153.16亿港元，股息率5.81%（Wind）。</p>
+<div class="box box-green"><b class="t">分析框架</b>物业板块跟随大市修复，保利物业涨幅（+1.62%）略超目标池均值。核心看点仍是现金流与分红：8.35倍PE+5.81%股息率，在"高利率压制估值"的宏观环境下属于相对抗跌的配置；东方证券9月底研报维持买入，H1归母净利+4.8%显示经营韧性。</div>
+<div class="box box-orange"><b class="t">风险提示</b>①地产基本面偏弱，新增在管面积增速放缓；②本期无公司层面增量资讯；③港股整体估值受海外利率压制，高股息的相对优势可能被利率上行侵蚀。</div>
+</div>
+
+<h2 class="sec">六、大宗商品</h2>
+
+<h3 class="sub">6.1 黄金｜周末4,193美元附近盘整，Kitco调查50%分析师看涨下周，静待10-14 CPI</h3>
+<div class="card">
+<table>
+<tr><th style="width:110px">维度</th><th>数据 / 内容</th></tr>
+<tr><td style='white-space:nowrap'>价格</td><td>现货金（Kitco）：10月11日早盘约 <b>4,193美元/盎司</b>，周末持平（越南VTC/EVN）。<b>周五收盘（10-09）：</b>纽约金4,193.87美元（<span class='up'>+1.47%</span>）；伦敦金4,194.74美元（<span class='up'>+60.93美元</span>）；国内金价收904.38元/克（<span class='up'>+15.04元</span>，网易10-11）。近7日金价：10-01收903.28 → 10-07低点889.21 → 10-09收904.38，本月涨跌+0.12%、月内振幅3.61%。</td></tr>
+<tr><td style='white-space:nowrap'>驱动因素</td><td><b>利多：</b>①Kitco周度调查（10-09）：14位华尔街分析师中50%看涨下周、36%看平、14%看跌，专家偏多；②油价降温+美债回落曾助推周五反弹（V型反弹延续）；③央行9月增持74万盎司、连续第23个月增持（央行10-07）。<b>利空：</b>①美联储年内再加息仍是基准情形，10月加息概率降至约18%但未消失；②10年期美债仍在5.24%的24年高位附近；③散户调查45%看涨、37%看跌、18%看平，分歧明显，未形成一致预期。</td></tr>
+<tr><td style='white-space:nowrap'>供需/机构</td><td>高盛预计2026年底金价升至4,900美元/盎司；花旗0–3个月目标4,800美元、6–12个月目标5,000美元（新浪财经10-09）。世界黄金协会调研：45%受访储备管理者预计未来12个月增持黄金，创历史纪录。</td></tr>
+<tr><td style='white-space:nowrap'>矛盾诊断</td><td>核心矛盾："避险与官方购金支撑" vs "美联储加息预期压制"（连续第3期）。周末的盘整本质是等待10-14美国9月CPI（预期同比3.7%、核心2.5%）：若CPI低于预期，加息预期降温+美债回落，反弹有望延续并挑战4,230–4,250压力区；若超预期，金价可能重回10-07低点889元/克（国内）一线。美元指数连续四周收高也是短期压制项。</td></tr>
+</table>
+<div class="box box-green"><b class="t">分析框架</b>黄金进入"事件驱动前的静默期"：价格在4,190–4,200美元窄幅盘整，多空都在等10-14 CPI。本轮V型反弹验证了"双锚"——短期交易锚是美债收益率与加息预期，长期配置锚是央行购金。Kitco专家调查50%看涨显示专业投资者对反弹延续性偏乐观，但散户37%看跌提醒分歧不小；短期追高需谨慎。</div>
+<div class="box box-orange"><b class="t">风险提示</b>①若10月14日CPI超预期（巴克莱预测同比3.7%、大摩3.69%），加息预期升温将迅速逆转反弹；②4,230–4,250美元压力区久攻不下可能引发获利了结；③美元指数连续四周走高，对金价形成持续压制。</div>
+</div>
+
+<h3 class="sub">6.2 铁矿石｜机构分歧：华联期货"反弹承压" vs 中钢网"边际改善"，i2701创年内新低682.5元</h3>
+<div class="card">
+<table>
+<tr><th style="width:110px">维度</th><th>数据 / 内容</th></tr>
+<tr><td style='white-space:nowrap'>价格</td><td>大连铁矿石主力i2701：10月9日收682.5元/吨（<span class='down'>-2.85%</span>），创年内新低；港口现货下跌：日照港60.8% PB粉650元（-14）、卡粉830元（-9）（光大期货10-09日报）。</td></tr>
+<tr><td style='white-space:nowrap'>驱动因素</td><td><b>利空：</b>①发运量处于高位（混沌天成：上周全球发运小幅回升，澳洲及非主流发运有增、巴西回落）；②钢厂盈利率维持低位、高炉亏损检修增加，铁水产量或持续下滑，采购意愿偏谨慎（正信期货）；③焦炭第二轮提降10月9日开启、10月12日零点执行（湿熄焦-100/干熄焦-110元/吨），黑色系成本支撑下移；④45港库存16,480.22万吨（环比+69.38万吨），日均疏港量341.10万吨（-3.00万吨）。<b>边际改善：</b>中国47港到港量2,467.7万吨（环比大幅-516.9万吨），铁水产量环比小幅增加（中钢网10-10）。</td></tr>
+<tr><td style='white-space:nowrap'>供需/机构</td><td><b>华联期货（10-10）：</b>市场维持供增需弱格局，预计矿价反弹承压，i2701参考680–720区间运行。<b>另有分析（新浪财经10-10）：</b>价格重心下移，等待需求与库存验证，主力合约运行区间下移至660–700元/吨，上方受跳空缺口与中期均线双重压制。<b>中钢网（10-10）：</b>利空阶段性释放、边际改善因素累积，下周主稳趋强。</td></tr>
+<tr><td style='white-space:nowrap'>矛盾诊断</td><td>核心矛盾（连续第3期）："复产预期" vs "钢厂亏损+铁水低位的现实"。本期新增变量是机构分歧本身：华联期货看反弹承压（680–720），中钢网看边际改善（主稳趋强）。682.5元已创年内新低，分歧点在于10-12焦炭提降执行后钢厂利润能否修复——若复产兑现，低库存下反弹弹性不小；若亏损扩大减产，660元一线将面临考验。</td></tr>
+</table>
+<div class="box box-green"><b class="t">分析框架</b>铁矿石是目标池内分歧最大的品种：价格已跌至年内新低，空头逻辑（供增需弱、成本下移）已被充分定价，边际变量转向"到港量环比-516.9万吨"这类改善信号。华联期货的"反弹承压"与中钢网的"主稳趋强"本质上是对同一组数据（库存累积 vs 到港回落）的不同权重——短期震荡偏弱仍是基准，但向下空间已较前期收窄。</div>
+<div class="box box-orange"><b class="t">风险提示</b>①钢厂亏损面扩大导致减产超预期；②港口库存继续累积压制现货；③若10-12焦炭提降执行后钢厂利润未修复，期价可能下探660元一线。</div>
+</div>
+
+<h3 class="sub">6.3 豆粕｜现货10-10普遍+20~30、10-11小幅回落，油厂库存129.64万吨（环比+10.5%）</h3>
+<div class="card">
+<table>
+<tr><th style="width:110px">维度</th><th>数据 / 内容</th></tr>
+<tr><td style='white-space:nowrap'>价格</td><td><b>10月10日现货（新浪财经）：</b>普遍+20~30元/吨——山东日照邦基3,350（+20）、龙口香驰3,400（+30）、东北铁岭九三3,500（+10）、华东泰兴邦基3,360（+20）、华南东莞中储粮3,330（+20）。<b>10月11日（网易行业报价）：</b>普遍-10~-20元/吨——日照邦基3,350（持平）、青岛渤海3,380（-10）、天津九三3,380（-10）、南通嘉吉3,330（-20）。现货仍在近一年高位附近。</td></tr>
+<tr><td style='white-space:nowrap'>驱动因素</td><td><b>利多：</b>①中国持续采购美国新季大豆支撑短期美豆盘面（USDA：9月17–24日当周对中国出口大豆59万吨，当前年度累计对中国1,076万吨、同比+1,076万吨）；②现货报价坚挺。<b>利空：</b>①油厂豆粕库存129.64万吨（上周117.32万吨，环比+10.5%；同比+9.01%），累库明显；②9月USDA报告美国大豆产量上调43万吨至1.23亿吨，压制盘面（五矿期货10-10）；③美豆优良率57%（前周58%、去年62%）、收割率25%，天气改善；④盘面处20日均线下方、方向向下（大越期货10-09）。</td></tr>
+<tr><td style='white-space:nowrap'>供需/调研</td><td>五矿期货（10-10）：中国持续加大力度采购美豆，利多较大程度已体现在价格上；美国和巴西维持增产预估，叠加宏观氛围偏鹰，多单止盈后转为观望。MYSTEEL：截至9月25日样本港口大豆库存980.2万吨（环比-3.3万吨、同比+41.7万吨）；油厂豆粕库存114.24万吨（环比+11.92万吨）。</td></tr>
+<tr><td style='white-space:nowrap'>矛盾诊断</td><td>核心矛盾（连续第3期）："现货坚挺的强现实" vs "高库存+盘面走弱的弱预期"。10-10现货+20~30到10-11的-10~-20，说明现货强势开始松动；五矿期货"利多已price in、多单止盈观望"的判断与现货回落相互印证。关键变量：中美经贸磋商进展（中国对美新季大豆采购节奏）、USDA后续报告。</td></tr>
+</table>
+<div class="box box-green"><b class="t">分析框架</b>豆粕的"现货强、预期弱"背离开始收敛：现货10-11小幅回落是累库压力（129.64万吨、环比+10.5%）向价格传导的早期信号；五矿期货指出的"USDA上调产量43万吨+宏观偏鹰"组合，解释了盘面为何先行走弱。短期跟随美豆维持震荡格局，现货能否守住3,350元一线是下周看点。</div>
+<div class="box box-orange"><b class="t">风险提示</b>①油厂库存继续累积，现货价格跟跌；②中美经贸磋商若无进展，美豆"堰塞湖"延续；③USDA若进一步上调单产预期，将强化利空。</div>
+</div>
+
+<h2 class="sec">七、后续关注与风险</h2>
+
+<h3 class="sub">7.1 未来2周日历</h3>
+<div class="card">
+<table>
+<tr><th>日期</th><th>事件</th><th>对目标池的意义</th></tr>
+<tr><td>10月12日（周一）</td><td>港股/A股开市；焦炭第二轮提降执行（零点）；国内期货夜盘恢复</td><td>验证周五大涨的持续性：国庆餐饮+9%数据能否延续发酵；海通国际下调海底捞目标价后开盘承压测试；焦炭提降执行后钢厂利润与铁矿石复产兑现</td></tr>
+<tr><td>10月13日（周二）</td><td>美股Q3财报季开幕（摩根大通/高盛/花旗/富国银行）；美国9月成屋销售、NFIB小型企业信心指数；苹果"Welcome Home"智能家居发布会</td><td>标普500预期Q3盈利+30%，银行股先行指标验证企业盈利韧性；银行指数过去一个月-7.5%，财报定调金融板块</td></tr>
+<tr><td>10月14日（周三）</td><td>中国9月CPI、美国9月CPI（预期同比3.7%、核心2.5%）；美国银行/摩根士丹利/阿斯麦/台积电财报；IEA月度原油市场报告</td><td><b>下周最重要的宏观事件</b>：决定加息预期走向——若超预期，美债收益率可能再冲5.365%前高，压制港股估值与金价反弹；IEA月报给出原油供需官方评估</td></tr>
+<tr><td>10月15日（周四）</td><td>美国9月PPI+零售销售+美联储褐皮书</td><td>观察能源成本向上游价格传导；零售销售检验美国消费者能否继续支撑经济增长</td></tr>
+<tr><td>10月16日（周五）</td><td>EIA原油库存、欧元区9月CPI终值、美联储主席沃什出席IMF年会炉边谈话</td><td>沃什与格奥尔基耶娃对话或释放政策信号；EIA库存验证美国供应端变化</td></tr>
+<tr><td>11月初</td><td>百胜中国Q3财报（高盛预计）</td><td>验证高盛预测的+9.3%/+9.2%/+10.4%；目标池内最受关注的公司业绩验证点</td></tr>
+<tr><td>10月27–28日</td><td>FOMC议息会议</td><td>决定年内是否再加息；市场对10月加息概率预期已降至约18%，但年内再加息仍是基准情形</td></tr>
+<tr><td>10月全月</td><td>A股/港股三季报集中披露；五中全会召开</td><td>业绩兑现成定价核心；关注内需政策落实，间接影响消费与物业板块</td></tr>
+</table>
+</div>
+
+<h3 class="sub">7.2 风险清单</h3>
+<div class="card">
+<table>
+<tr><th>级别</th><th>风险项</th><th>具体说明</th></tr>
+<tr><td><span class="pill p-red">高</span></td><td>美联储年内再加息</td><td>10月14日美国9月CPI（预期同比3.7%、核心2.5%）将定调；10月加息概率已降至约18%（CME FedWatch），但年内再加息仍是基准情形；贝森特称美国国债规模约41万亿美元、财政整顿计划中期选举后公布，"强美元、高利率"环境下资金回流美国，新兴市场与港股承压</td></tr>
+<tr><td><span class="pill p-red">高</span></td><td>美债收益率再冲高</td><td>10年期周五尾盘5.24%（+0.5bp），仍在24年高位附近；若10月14日CPI超预期或FOMC释放更鹰派信号，收益率上行将压制全球风险资产与港股估值；巴克莱预测9月CPI同比3.7%、环比+0.58%</td></tr>
+<tr><td><span class="pill p-grey">中</span></td><td>中东地缘反复</td><td>特朗普称中期选举前不攻击伊朗，但白宫被曝已制定三天打击方案；胡塞武装袭击沙特能源设施、霍尔木兹海峡"触雷爆炸"、油轮运费+540%；Pepperstone称油价是"双向市场"，地缘风险溢价与实物供应改善角力</td></tr>
+<tr><td><span class="pill p-grey">中</span></td><td>三季报业绩兑现</td><td>美股Q3财报季10-13开幕，标普500预期Q3盈利+30%；银行指数过去一个月-7.5%，财报是先行验证；百胜中国Q3（11月初）被高盛寄予+10.4%经营利润增速预期，若不及预期评级上调将反噬</td></tr>
+<tr><td><span class="pill p-grey">中</span></td><td>海底捞目标价下调共振</td><td>海通国际下调目标价16.4→11.81港元（-28%）后，若其他大行跟进下调，将形成负向共振；10-12开盘承压测试</td></tr>
+<tr><td><span class="pill p-blue">低</span></td><td>铁矿石需求季节性走弱</td><td>主力i2701已创年内新低682.5元，45港库存连续上升、铁水低位；若节后复产兑现不及预期，期价可能下探660元一线</td></tr>
+<tr><td><span class="pill p-blue">低</span></td><td>AI交易波动</td><td>OpenAI年化收入事件利空淡化（工商时报10-11），科技股已回弹；费城半导体指数仍-0.41%，芯片链分化延续</td></tr>
+</table>
+</div>
+
+<h3 class="sub">7.3 机构观点速览</h3>
+<div class="card">
+<table>
+<tr><th>机构</th><th>核心判断</th></tr>
+<tr><td>海通国际（海底捞）</td><td>降目标价16.4→11.81港元，维持"优于大市"；暑假翻台率回暖、外卖延续高增长；预计2026–2028年归母净利41.2/44.5/47.6亿元（TradingView 10-09）</td></tr>
+<tr><td>高盛（百胜中国）</td><td>目标价467港元，"买入"（确信名单）；预计11月初Q3销售额/餐厅利润/经营利润+9.3%/+9.2%/+10.4%，净开店470间（新浪财经10-09）</td></tr>
+<tr><td>巴克莱（美国CPI）</td><td>预测9月整体CPI环比+0.58%（季调）、同比3.7%（8月3.4%），仍低于5月4.2%的阶段性高点（新华财经10-10）</td></tr>
+<tr><td>摩根士丹利（美国CPI）</td><td>预测9月CPI同比3.69%、环比+0.62%（新华财经10-10）</td></tr>
+<tr><td>高盛（黄金）</td><td>预计2026年底金价升至4,900美元/盎司（新浪财经10-09）</td></tr>
+<tr><td>花旗（黄金）</td><td>0–3个月目标价4,800美元、6–12个月目标价5,000美元（新浪财经10-09）</td></tr>
+<tr><td>中信建投</td><td>10月加息紧迫性下降但年内再加息是基准情形；由主题转向三季报盈利兑现；AI硬件共识度最高（10月策略）</td></tr>
+<tr><td>华泰证券（易峘）</td><td>港股核心矛盾：南向资金回归的流动性修复 vs 海外高利率压制估值；中期反转未确认，结构性行情；红利资产作底仓（10月策略）</td></tr>
+<tr><td>华联期货（铁矿石）</td><td>市场维持供增需弱格局，预计矿价反弹承压；i2701参考680–720区间运行（新浪财经10-10）</td></tr>
+<tr><td>五矿期货（豆粕）</td><td>中国持续采购美豆利多已price in；美国巴西增产预估+宏观偏鹰，多单止盈后转为观望（新浪财经10-10）</td></tr>
+<tr><td>国金证券</td><td>缩量回调接近尾声，业绩兑现成定价核心，风格"均衡略偏成长"；有色（金、铜、铝）反弹正在孕育（10月策略）</td></tr>
+<tr><td>东方证券（保利物业）</td><td>维持买入、目标价下调至38.50港元；H1营收88.29亿元（+5.2%）、归母净利9.33亿元（+4.8%）（2026-09-25）</td></tr>
+</table>
+<div class="box box-green"><b class="t">配置共识</b>①下周是"数据+财报"双验证周：10-14美国9月CPI（预期同比3.7%）定调加息路径，10-13美股Q3财报季开幕（标普500预期Q3盈利+30%）；②油价"双向市场"：地缘风险溢价（胡塞袭击、运费+540%）vs 实物供应改善（俄增供柴油、中国恢复成品油出口、IEA加速释放储备）相互角力，布伦特104美元附近高位震荡；③黄金等待CPI打破僵持：4,200美元附近盘整，机构中长期仍看4,900–5,000美元；④主要分歧/约束：CPI是否超预期、美债收益率是否再冲高。</div>
+<p class="src">注：券商10月策略均为2026年10月7–9日发布；海通国际对海底捞的评级引自TradingView 2026-10-09；东方证券对保利物业的评级引自2026-09-25，已标注时间；CPI预测引自新华财经2026-10-10。</p>
+</div>
+
+<footer>
+<b>数据来源：</b>万得 Wind 金融数据服务（港股/A股/美股/指数行情，均为2026-10-09收盘截面）；公开资讯：新浪财经、财联社、新华财经、工商时报、越南VTC/EVN、FX168、日媒リファスタ、TradingView/格隆汇、混沌天成期货/正信期货/华联期货/五矿期货/大越期货、Mysteel、世界黄金协会、美国财政部/贝森特、港交所披露易。<br>
+<b>基准日：</b>①港股 2026-10-09收盘（周日休市沿用周五收盘）；②A股 2026-10-09收盘；③国内期货 2026-10-09收盘；④美股 2026-10-09收盘；⑤国际大宗为10月9–11日数据，口径见正文标注。<br>
+<b>免责声明：</b>本报告由自动化流程基于公开信息整理生成，仅供内部参考，不构成任何投资建议。部分数据存在多源口径差异（已在正文中标注），请以交易所及官方披露为准。投资有风险，决策需谨慎。<br>
+<b>生成信息：</b>2026年10月11日 18:15（GMT+8）｜单文件 HTML 报告｜涨跌配色：中国惯例（红涨绿跌）
+</footer>
+</div>
+</body>
+</html>
