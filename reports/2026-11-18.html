@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日推送 · 2026-11-18（星期三：英伟达Q3营收1,158亿美元大超预期、盘后+4.8%；A股缩量收红但4,133股下跌、科创50+2.19%；恒指-0.91%京东绩后-7.18%；黄金盘中跌破3,800美元）</title>
+<style>
+  :root{
+    --bg:#f4f6f9; --card:#ffffff; --ink:#1b2430; --ink2:#4a5568; --ink3:#7d8694;
+    --line:#e3e8ef; --up:#c62828; --down:#2e7d32; --flat:#6b7280;
+    --accent:#1f4e79; --accent2:#0f766e; --warn:#b45309; --gold:#a16207;
+    --chipbg:#eef2f7;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    font-size:15px;line-height:1.7;}
+  .wrap{max-width:1080px;margin:0 auto;padding:28px 20px 60px;}
+  header.top{background:linear-gradient(135deg,#1f4e79,#2c6ea8);color:#fff;border-radius:14px;
+    padding:26px 28px;box-shadow:0 6px 20px rgba(31,78,121,.18);}
+  header.top h1{margin:0 0 6px;font-size:23px;letter-spacing:.5px;}
+  header.top .sub{font-size:13.5px;opacity:.94;line-height:1.85;}
+  header.top .tag{display:inline-block;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.35);
+    border-radius:999px;padding:2px 11px;font-size:12px;margin-right:8px;margin-top:6px;}
+  .base{margin-top:16px;background:#eff6ff;border:1px solid #bfdbfe;border-radius:10px;
+    padding:14px 18px;font-size:13.5px;color:#1e3a5f;line-height:1.85;}
+  .calendar{margin-top:16px;background:#fffbeb;border:1px solid #fde68a;border-left:5px solid #f59e0b;
+    border-radius:10px;padding:14px 18px;font-size:13.5px;color:#5b4208;line-height:1.85;}
+  .calendar b{color:#92400e;}
+  h2.sec{font-size:18px;margin:34px 0 14px;padding-left:12px;border-left:5px solid var(--accent);}
+  h2.sec .en{font-size:12px;color:var(--ink3);font-weight:400;margin-left:8px;}
+  h3.sub{font-size:15.5px;margin:20px 0 8px;color:var(--accent2);}
+  h4.co{font-size:14.5px;margin:16px 0 6px;color:var(--accent);}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px;
+    box-shadow:0 1px 3px rgba(16,24,40,.04);margin-bottom:16px;}
+  .concl{counter-reset:c;}
+  .concl .item{position:relative;padding:12px 14px 12px 52px;margin-bottom:10px;background:var(--card);
+    border:1px solid var(--line);border-radius:11px;box-shadow:0 1px 3px rgba(16,24,40,.04);}
+  .concl .item::before{counter-increment:c;content:counter(c);position:absolute;left:14px;top:12px;
+    width:24px;height:24px;border-radius:50%;background:var(--accent);color:#fff;font-size:13px;
+    font-weight:700;display:flex;align-items:center;justify-content:center;}
+  .concl .item b{color:var(--accent);}
+  .kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:11px;}
+  .kpi .k{background:var(--card);border:1px solid var(--line);border-radius:11px;padding:13px 14px;
+    box-shadow:0 1px 3px rgba(16,24,40,.04);}
+  .kpi .k .n{font-size:12.5px;color:var(--ink3);}
+  .kpi .k .v{font-size:19px;font-weight:700;margin-top:3px;font-variant-numeric:tabular-nums;}
+  .kpi .k .d{font-size:12.5px;margin-top:2px;font-variant-numeric:tabular-nums;}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin:10px 0 4px;}
+  th,td{padding:8px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;}
+  th{background:#f0f4f9;color:#33475b;font-weight:600;white-space:nowrap;}
+  td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap;}
+  .up{color:var(--up);font-weight:600;}
+  .down{color:var(--down);font-weight:600;}
+  .flat{color:var(--flat);font-weight:600;}
+  .note{font-size:12.5px;color:var(--ink3);line-height:1.75;margin-top:8px;}
+  .box{background:#f8fafc;border:1px solid var(--line);border-radius:10px;padding:13px 16px;margin:12px 0;
+    font-size:13.5px;line-height:1.8;}
+  .box.warn{background:#fff7ed;border-color:#fed7aa;}
+  .box.good{background:#f0fdf4;border-color:#bbf7d0;}
+  .box.alert{background:#fef2f2;border-color:#fecaca;}
+  .box.blue{background:#eff6ff;border-color:#bfdbfe;}
+  ul.tight{margin:6px 0 6px 18px;padding:0;}
+  ul.tight li{margin:4px 0;}
+  ol.tight{margin:6px 0 6px 20px;padding:0;}
+  ol.tight li{margin:4px 0;}
+  p{margin:8px 0;}
+  .chip{display:inline-block;background:var(--chipbg);border:1px solid var(--line);border-radius:999px;
+    padding:1px 9px;font-size:12px;color:var(--ink2);margin:0 4px 4px 0;}
+  .src{font-size:12px;color:var(--ink3);margin-top:6px;}
+  footer{margin-top:40px;padding-top:18px;border-top:2px solid var(--line);font-size:12px;color:var(--ink3);line-height:1.85;}
+  .flag{display:inline-block;font-size:11.5px;padding:1px 7px;border-radius:5px;background:#eef2f7;
+    color:#475569;margin-left:6px;vertical-align:middle;}
+  .flag.new{background:#dcfce7;color:#166534;}
+  .flag.old{background:#f1f5f9;color:#64748b;}
+  .flag.risk{background:#fee2e2;color:#991b1b;}
+  .flag.fix{background:#dbeafe;color:#1e40af;}
+  @media(max-width:680px){
+    .wrap{padding:16px 12px 40px;}
+    header.top{padding:18px 16px;}
+    header.top h1{font-size:19px;}
+    table{font-size:12.5px;}
+    th,td{padding:6px 5px;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+<h1>每日推送 · 2026-11-18（星期三）</h1>
+<div class="sub">英伟达财报大超预期、盘后 +4.8%，Q4 指引 1,300 亿美元 · A 股缩量收红、科创50 +2.19% 但 4,133 只个股下跌 · 黄金盘中跌破 3,800 美元、铁矿 646 元企稳一天</div>
+<div class="sub" style="margin-top:10px">
+<p><b>财报仲裁落地：</b>英伟达 FY2027 Q3（美东 11-17 盘后公布）营收 1,158 亿美元、同比 +103%，非 GAAP EPS 2.68 美元，Q4 指引 1,300 亿美元 ±3%，三项全部高于指引与共识，盘后涨约 +4.8%；但 NVDA 正式收盘仍 -0.44% 收 155.46 美元、较 10 月纪录高位低约 35%，财报前的去杠杆并未因一份财报自动结束，今晚美股正式交易才是验证。</p>
+<p><b>指数与个股背离：</b>A 股三大指数收红（上证 +0.09%、创业板 +0.85%、科创50 +2.19%），但上涨仅 1,318 只、下跌 4,133 只，沪深成交 1.37 万亿元刷新年内新低——这是存量资金向华为算力链抱团，不是增量进场。港股恒指 -0.91%，京东 Q3 业绩实际数字落地（收入 3,096 亿元、非 GAAP 净利 83 亿元）仍跌 -7.18%，市场惩罚的是零售增速与新业务亏损，不是利润本身。</p>
+<p><b>目标池无消息日：</b>7 家公司窗口内（11-17 18:00 至 11-18 18:00）全部无新公告，池均值 -0.34%（2 涨 1 平 4 跌）跑赢恒指 0.57 个百分点，靠的仍是低估值与高股息的防御属性；海底捞联名进入第三日，全国销量依然未披露，成交量放大至 2,582 万股而股价只 +0.19%，热度没有转成买盘定价。</p>
+<p><b>商品分化：</b>黄金现货 11-18 盘中最低 3,785 美元、连续 7 个交易日下跌并跌破 3,800 美元，但 COMEX 11-17 结算反而 +0.29%（非同时点），央行连续 24 个月增持与 GLD 连续 3 日买入的托底还在，压顶的是 12 月加息约 96% 的定价；铁矿 I2701 收 646.0 元（钢之家快照）企稳一天，焦煤却 -3.98%，成本端塌方快于铁矿本身，补跌结构未解除。</p>
+</div>
+<div>
+<span class="tag">第 56 期 · 常规版</span><span class="tag">港股 / A股基准日 2026-11-18</span><span class="tag">美股基准日 2026-11-17</span><span class="tag">制表：小昊</span><span class="tag">制表时点 2026-11-18 18:00</span>
+</div>
+</header>
+<div class="base"><b>基准日说明（前置）：</b>港股与 A 股、国内期货为 2026-11-18 收盘（A 股 15:00、港股 16:00、国内期货日盘 15:00）；美股与国际大宗（COMEX、CBOT、WTI / Brent 结算）为美东 2026-11-17 收盘（北京时间 11-18 凌晨）；现货金银为 11-18 日内时点价，逐项标注。国内期货 11-18 日盘官方收盘汇总在制表时点未被公开源收录，黄金与豆粕只取到夜盘与午间快照、铁矿取钢之家收盘快照，均已逐项标注、不得当作交易所官方收盘引用（口径 125）。</div>
+<div class="calendar"><b>日历框 · 本期最大单点变量：今晚 FOMC 纪要与英伟达财报后的首个正式交易日。</b>前置数据：10 月 FOMC 维持 3.75%–4.00%（10-2，Cook、Hammack 主张加息），纪要北京时间 11-19 03:00 公布；CME 口径 12 月加息 25bp 概率约 96%（多源区间 94%–100%，不可横比，口径 127）；NVDA 盘后 +4.8% 至约 162.9 美元。三种走法传导：<b>①纪要偏鹰 + NVDA 正式交易高开低走</b>——盘后涨幅被兑现，亚太硬件链反弹一日游，黄金继续探 3,785 下方；<b>②纪要中性 + NVDA 收复 160 美元</b>——去杠杆阶段性结束，科创50 与港股芯片股延续，纳指脱离回调区尝试；<b>③纪要意外偏鸽（提及就业或金融稳定）</b>——加息定价回落，黄金收复 3,850、成长股普涨，但与官员近两日鹰派表态相悖、概率最低。<b>下期硬节点：</b>今晚腾讯盘后财报与 Anthropic IPO 定价；11-19 Anthropic 挂牌、APEC 领导人非正式会议（深圳，11-18/19）；11-20 LPR 报价（预期 1 年期 3.00% / 5 年期 3.50% 不变）；12-08/09 FOMC。</div>
+
+<h2 class="sec">一、核心结论 <span class="en">固定 7 条 · 自由分析</span></h2>
+<div class="concl">
+<div class="item"><b>英伟达财报把「AI 见顶」的短线叙事证伪了，但没有把股价的去杠杆证伪。</b>Q3 营收 1,158 亿美元（指引 1,080 亿 ±2%、共识约 1,091 亿）、数据中心 1,076 亿美元、非 GAAP EPS 2.68 美元（共识 2.47）、毛利率 74.9%，Q4 指引 1,300 亿美元 ±3% 高于共识 1,252 亿，且明确假设无中国数据中心计算营收——超预期不是靠中国区注水。反向证据同样硬：NVDA 11-17 正式收盘 -0.44% 收 155.46 美元、为近 12 个月最低收盘，较 10-06 纪录高位 239.24 美元低约 35%，盘后 +4.8% 只是把价格送回 163 美元附近，仍在回调区内。判断：财报解决的是「业绩问题」，没解决「仓位问题」；今晚正式交易能否收在 160 美元上方，是这轮仲裁的真正判据。</div>
+<div class="item"><b>A 股今天是「指数红、账户绿」的缩量抱团，不是风险偏好回升。</b>上证 +0.09%、创业板 +0.85%、科创50 +2.19%，但上涨 1,318 只对下跌 4,133 只、上涨占比约 24%，沪深成交 1.37 万亿元较昨日再缩约 880 亿元、刷新年内新低；领涨只有华为算力、算力租赁、PCB 一条线（华胜天成 4 天 3 板、深南电路与沪电股份涨停），贵金属、医药、影视全线领跌。机制很直接：没有增量钱，存量只能挤进国产替代这一条与海外链脱钩的逻辑里。判断：缩量 + 极端分化的组合历史上很少直接见底，明日若成交仍在 1.4 万亿下方，抱团松动的风险大于指数补涨的机会。</div>
+<div class="item"><b>京东绩后 -7.18% 说明市场现在惩罚的是增速结构，不是利润表。</b>京东 Q3 收入 3,096 亿元、同比仅 +3.5%，零售收入 +2.9%，但经营利润 52 亿元扭亏、非 GAAP 归母净利 83 亿元同比 +43%、营销开支同比 -26.2%——利润明明很好，股价却是恒指最差成份股之一，京东健康更跌 -15.43%。市场盯的是两件事：零售主业增速掉到 3% 档、新业务单季仍亏 96.42 亿元（虽同比收窄）。这与目标池的定价逻辑同构：今天港股资金买的仍是「确定的分红与回购」，不是「确定的成长」。判断：京东电话会若不能给出外卖亏损收窄的季度路径，绩后跌幅不会快速修复；该结论只用于第二章背景，不改变目标池构成。</div>
+<div class="item"><b>黄金跌破 3,800 美元是趋势破位，不是托底失效。</b>现货金 11-18 盘中最低 3,785 美元、连续 7 个交易日下跌、退至 2025 年 9 月水平；但同一窗口里 COMEX 12 月金 11-17 结算 3,864.20 美元反而 +0.29%（非同时点，时差不是背离），中国央行连续 24 个月增持（10 月 +约 25.8 吨、为重启以来单月最大）、GLD 11-17 再 +2.56 吨为连续 3 日买入。压顶的力量更硬：12 月加息 25bp 已约 96% 定价、10Y 美债 5.10%、美元指数 103.69 处 19 个月高位。判断：托底决定跌速、利率决定方向；3,800 破位后先看 3,785 与 3,750 两道盘中低点，收复 3,850 之前不谈止跌。</div>
+<div class="item"><b>铁矿 646 元的企稳是成本塌方中的相对强，不是供需反转。</b>I2701 收 646.0 元、对昨收 +0.86%（钢之家快照，口径 125），但同日焦煤 -3.98%、焦炭 -1.71%（对昨结），47 港库存 17,759.47 万吨续累、铁水 230.32 万吨连降四周、钢厂盈利率 11.26% 近九成亏损——需求与库存两端都没有任何一项转好。铁矿比焦煤抗跌，靠的是疏港 319.52 万吨仍在高位与冬储预期，不是钢厂利润修复。判断：支撑是脆的；触发补跌的条件不变——铁水跌破 230 万吨确认、或下一周库存再增超 200 万吨，任一兑现，640 下方空间打开。</div>
+<div class="item"><b>目标池的「无消息日」本身就是信息：7 家全无新公告，定价权完全回到估值与股息。</b>今日 2 涨 1 平 4 跌、池均值 -0.34%，跑赢恒指 0.57 个百分点、跑赢恒科 0.24 个百分点；领涨的同仁堂科技 +0.33%（PE 10.40、股息率 6.98% 上一期口径）与海底捞 +0.19%（股息率约 7.33%）都是高股息，领跌的达势 -1.05%（PE 23.22、无分红）与保利物业 -0.83% 是仅有的例外叙事。海底捞联名第三日成交量 2,582 万股较昨日放大 58%，股价却只 +0.19%，量价背离说明热度在扩散、买盘不跟价。判断：在 11-20 LPR 与今晚纪要落地前，目标池继续按防御定价；谁先打出公告级催化，谁先脱离这个结构。</div>
+<div class="item"><b>豆粕夜盘 +0.84% 是成本端跟随，不是国内需求转强。</b>USDA 11 月 WASDE 把美豆期末库存下调至 3.00 亿蒲式耳（预期 3.32 亿）、库消比 6.5%，CBOT 大豆 11-17 收 12.255 美元/蒲式耳，M2701 夜盘跟涨至 3,115 元；但国内豆粕库存 134.69 万吨处高位、进口大豆库存 795.39 万吨、11 月到港预估 949.65 万吨，下游饲料库存仅约 7 天随用随采——利多在美国、压力在中国。判断：豆粕仍是「涨不动、跌不深」，上方看 WASDE 利多能否传导为现货基差走强（11-17 沿海基差 -50 至 +80 元/吨分化），下方看库存去化速度，单边趋势条件不具备。</div>
+</div>
+
+<h2 class="sec">二、市场全景 <span class="en">9 个 KPI · 2.1 离岸市场</span></h2>
+<div class="kpi">
+<div class="k"><div class="n">上证指数</div><div class="v">3,587.83</div><div class="d up">+0.09%</div></div>
+<div class="k"><div class="n">深证成指</div><div class="v">10,659.41</div><div class="d up">+0.20%</div></div>
+<div class="k"><div class="n">创业板指</div><div class="v">2,311.62</div><div class="d up">+0.85%</div></div>
+<div class="k"><div class="n">科创50</div><div class="v">1,247.99</div><div class="d up">+2.19%</div></div>
+<div class="k"><div class="n">恒生指数</div><div class="v">23,294.75</div><div class="d down">-0.91%</div></div>
+<div class="k"><div class="n">恒生科技</div><div class="v">3,736.33</div><div class="d down">-0.58%</div></div>
+<div class="k"><div class="n">沪深京成交</div><div class="v">约 1.38 万亿</div><div class="d down">沪深 1.37 万亿 · 年内新低</div></div>
+<div class="k"><div class="n">恒指成交</div><div class="v">1,771.5 亿港元</div><div class="d flat">主板全日</div></div>
+<div class="k"><div class="n">美元指数</div><div class="v">103.69</div><div class="d up">+0.13%（美股基准日）</div></div>
+</div>
+<div class="note">KPI 来源：金融界、财联社、新浪收评、钜亨网港股盘后（2026-11-18）；美元指数为美东 11-17 收盘（Tapeboard 口径），与 A / 港股非同时点。沪深成交 13,697 亿元为上证 6,502.32 亿 + 深证 7,194.71 亿自洽合计，全市场含北证约 1.38 万亿元。</div>
+<h3 class="sub">2.1 离岸市场（美东 2026-11-17 收盘 + 亚太 11-18 收盘）</h3>
+<div class="card">
+<table>
+<tr><th>指数 / 标的</th><th class="num">收盘</th><th class="num">涨跌幅</th><th>关键细节</th></tr>
+<tr><td>道琼斯工业</td><td class="num">50,759.42</td><td class="num down">-1.64%</td><td>标普 500 全部板块下跌，金融领跌（JPM -2.44%）</td></tr>
+<tr><td>标普 500</td><td class="num">7,340.53</td><td class="num down">-1.03%</td><td>四连跌，7 月以来最低收盘</td></tr>
+<tr><td>纳斯达克综合</td><td class="num">24,328.38</td><td class="num down">-0.74%</td><td>四连跌，财报公布前仍在回调区</td></tr>
+<tr><td>纳斯达克 100</td><td class="num">27,001.78</td><td class="num down">-0.72%</td><td>与综合指数同步</td></tr>
+<tr><td>英伟达 NVDA</td><td class="num">155.46 美元</td><td class="num down">-0.44%</td><td>正式收盘为近 12 个月最低；盘后财报后约 +4.8% 至 162.9 美元（非收盘）</td></tr>
+<tr><td>台积电 ADR (TSM)</td><td class="num">359.69 美元</td><td class="num down">-3.68%</td><td>BIS 远程访问新规冲击；公司称正在审阅、将合规</td></tr>
+<tr><td>罗素 2000</td><td class="num">2,701.87</td><td class="num down">-1.50%</td><td>小盘跌幅大于大盘</td></tr>
+<tr><td>VIX</td><td class="num">25.46</td><td class="num up">+11.13%</td><td>四连升，日内高 27.73</td></tr>
+<tr><td>纳斯达克中国金龙</td><td class="num">5,363.99</td><td class="num down">-1.89%</td><td>价格指数口径；全收益口径 6,836.10 同为 -1.89%</td></tr>
+<tr><td>10Y 美债收益率</td><td class="num">5.10%</td><td class="num down">-2bp</td><td>各源区间 5.09%–5.12%，方向一致向下</td></tr>
+</table>
+<div class="note">来源：Edge、TickerGrove、YieldReport、AP 转述、Nasdaq / Yahoo Finance、Cboe 相关口径（2026-11-17 收盘，11-18 发布）。费城半导体指数只作细节引用、不进表。</div>
+<table>
+<tr><th>亚太（11-18 收盘）</th><th class="num">收盘</th><th class="num">涨跌幅</th><th>一句话细节</th></tr>
+<tr><td>KOSPI</td><td class="num">5,067.44</td><td class="num up">+1.99%</td><td>重上 5,000 点、终结三连跌，三星电子 +2.31%</td></tr>
+<tr><td>日经 225</td><td class="num">59,024.28</td><td class="num up">+0.28%</td><td>三日来首涨，尾盘买盘占优</td></tr>
+<tr><td>东证 TOPIX</td><td class="num">3,824.00</td><td class="num down">-0.42%</td><td>与日经背离（涨跌幅按点数自算）</td></tr>
+<tr><td>上证指数</td><td class="num">3,587.83</td><td class="num up">+0.09%</td><td>午后探底回升，成交年内新低</td></tr>
+<tr><td>恒生指数</td><td class="num">23,294.75</td><td class="num down">-0.91%</td><td>盘中低 23,208 创月内新低，连跌 2 日</td></tr>
+</table>
+<p><b>热点一 · FOMC 纪要今晚发布，12 月加息几乎完全定价。</b>10 月会议维持 3.75%–4.00%（10-2），11-17 Musalem（圣路易斯联储）称可能需要数次加息、Williams（纽约联储）称仍需再加息但反对激进路径，主席 Warsh 11-16 演讲未给利率指引；CME 口径 12 月 +25bp 概率多源区间约 94%–100%、+50bp 仅 3%–4%。判断：纪要的边际信息只剩「异议者是否扩围」，概率本身已无上行空间，鹰派意外只能来自措辞、不能来自定价。</p>
+<p><b>热点二 · BIS 芯片远程访问新规落地，台积电首当其冲。</b>商务部 11-16 临时最终规则封堵经第三国数据中心远程租用美国先进芯片算力给中国企业的路径（超 1,200 万 TPP 须许可），并取消中国设计企业经代工厂豁免的捷径；TSM 11-17 跌 -3.68%，公司称正在审阅、专用汽车 / 挖矿芯片代工不受影响。判断：新规抬高的是合规成本与交付周期，不是当期订单；对 A 股的传导是强化国产替代抱团（今日科创50 +2.19% 已在定价），对港股硬件链则是双向波动加大。</p>
+</div>
+<div class="box warn"><b>涨跌结构提示：</b>上涨 1,318 只 / 下跌 4,133 只，上涨占比约 24%；涨停 41 家 / 跌停 40 家（单一来源 zhiguwang 复盘，引用须注单源）；逆势上涨：华为算力、算力租赁、PCB、家电；跌幅居前：贵金属（中金黄金跌超 7%）、AI 漫剧、医药 / CRO、有色。判断：广度极差而指数收红，是抱团行情的典型截面，不按普涨解读。</div>
+
+<h2 class="sec">三、目标池 <span class="en">固定 7 行 · 锁定顺序</span></h2>
+<div class="card">
+<table>
+<tr><th>公司</th><th class="num">收盘（港元）</th><th class="num">涨跌幅</th><th>日内区间</th><th class="num">成交额</th><th class="num">换手</th><th class="num">PE*</th><th class="num">YTD</th><th class="num">距 52 周低</th></tr>
+<tr><td>海吉亚医疗 06078</td><td class="num">10.66</td><td class="num flat">0.00%</td><td>10.53–10.69</td><td class="num">约 840 万（估算）</td><td class="num">0.13%</td><td class="num">32.09</td><td class="num down">-14.17%</td><td class="num">+31.60%</td></tr>
+<tr><td>中国食品 00506</td><td class="num">3.98</td><td class="num down">-0.50%</td><td>3.93–4.00</td><td class="num">约 499 万（估算）</td><td class="num">0.04%</td><td class="num">11.07</td><td class="num down">约 -4.58%</td><td class="num">+31.79%</td></tr>
+<tr><td>海底捞 06862</td><td class="num">10.40</td><td class="num up">+0.19%</td><td>10.30–10.66</td><td class="num">约 2.69 亿（估算）</td><td class="num">0.48%</td><td class="num">11.73</td><td class="num down">-27.02%</td><td class="num">+16.52%</td></tr>
+<tr><td>保利物业 06049</td><td class="num">26.40</td><td class="num down">-0.83%</td><td>26.34–26.64</td><td class="num">约 968 万（估算）</td><td class="num">0.07%</td><td class="num">7.68</td><td class="num down">-17.19%</td><td class="num">+3.12%</td></tr>
+<tr><td>同仁堂科技 01666</td><td class="num">3.02</td><td class="num up">+0.33%</td><td>3.00–3.05</td><td class="num">约 177 万（估算）</td><td class="num">0.05%</td><td class="num">10.40</td><td class="num down">-31.52%</td><td class="num">+7.48%</td></tr>
+<tr><td>达势股份 01405</td><td class="num">32.00</td><td class="num down">-1.05%</td><td>31.66–33.06</td><td class="num">约 1,005 万（估算）</td><td class="num">0.24%</td><td class="num">23.22</td><td class="num down">-55.33%</td><td class="num">+14.94%</td></tr>
+<tr><td>百胜中国 09987</td><td class="num">405.20</td><td class="num down">-0.54%</td><td>403.00–406.40</td><td class="num">约 1.02 亿（估算，量待复核）</td><td class="num">0.07%</td><td class="num">16.94</td><td class="num up">+9.87%</td><td class="num">+30.46%</td></tr>
+</table>
+<div class="note">口径注一（均值 / 超额）：池均值 -0.34%（2 涨 1 平 4 跌），跑赢恒指（-0.91%）0.57 个百分点、跑赢恒科（-0.58%）0.24 个百分点。口径注二（*PE 口径）：PE 为 Finnhub 2026-11-18 口径（00506 为 CoinDataFlow 同日快照 11.07），跨期比较须谨慎；00506 与 09987 涨跌幅按上一期收盘（4.00 / 407.40 港元）自算，与个别源按 3.975 / 407.20 前收得出的 +0.13% / -0.49% 有 0.2–0.6 个百分点差异（口径 124）。口径注三（YTD 基准）：YTD 以 2025-12-31 收盘为基准、按上一期 YTD 与今日涨跌幅链式自算；距 52 周低同为链式自算。成交额为成交量 × 收盘价近似、换手为成交量 ÷ 已发行股数自算，非交易所原值；09987 成交量快照时点为 13:03、可能不完整（口径 129）。</div>
+</div>
+<div class="box blue"><b>判断：</b>目标池连续第二日跑赢恒指，但驱动力从昨日的「百胜领涨」切换为今日的「跌得少」——这是防御跑赢、不是进攻跑赢。池内 YTD 仍只有百胜 +9.87% 为正，达势 -55.33% 垫底，结构没有变化。</div>
+
+<h2 class="sec">四、七家公司逐一体检 <span class="en">每节含基本交易数据表与特色监控</span></h2>
+
+<h3 class="sub">4.1 海吉亚医疗 06078 <span class="flag old">无新增</span></h3>
+<div class="card">
+<table><tr><th>收盘价</th><th class="num">涨跌幅</th><th class="num">市值</th><th class="num">成交额</th></tr>
+<tr><td>10.66 港元</td><td class="num flat">0.00%</td><td class="num">66.0 亿港元</td><td class="num">约 840 万港元（估算）</td></tr></table>
+<p><b>特色监控 · 回购与手术量：本期无新增。</b>窗口内无公告、回购、机构观点与手术量披露。最近回购为 10-22 回购 221,000 股（9.00–9.10 港元、约 200 万港元），累计至 10-22 约 591.42 万股；回购暂止期文件注至 11-21 前后。量能证据：成交量 78.8 万股，低于 11-17 的 80.6 万股与 11-13 的 166 万股，全日振幅仅 1.5%，是「无人交易」而非「有人抛售」。运营硬数据仍为 H1 2026：收入 19.61 亿人民币（-1.4%）、净利润 2.57 亿（+4.7%）、在管肿瘤医院 17 家。</p>
+<div class="box"><b>估值 · 交易与跟踪注：</b>PE-TTM 32.09、股息率—（无分红，回报以回购为主；第三方快照出现的 1.79% 未采纳，口径 128）、市值 66.0 亿港元（Finnhub，2026-11-18）。收盘 10.66 港元仍低于 11 元；2026–2028 每财年约人民币 5 亿元回购和 / 或分红计划为存量锚，2026 财年已执行规模距年度目标仍有明显缺口，年末前是否加速是核心跟踪点。</div>
+</div>
+
+<h3 class="sub">4.2 中国食品 00506 <span class="flag old">无新增</span></h3>
+<div class="card">
+<table><tr><th>收盘价</th><th class="num">涨跌幅</th><th class="num">市值</th><th class="num">成交额</th></tr>
+<tr><td>3.98 港元</td><td class="num down">-0.50%</td><td class="num">111.7 亿港元</td><td class="num">约 499 万港元（估算）</td></tr></table>
+<p><b>特色监控 · 渠道「斩杀线」：本期无新增。</b>窗口内无 00506 公告、渠道政策与机构观点，斩杀线（70% 以上单品毛利低于 8 个点、2L 装餐饮渠道利润率仅 3.3%）无新披露。最近重大事项为 11-10 续订三年持续关连交易（2027–2029）：向中粮集团采购年度上限 23.87 / 27.09 / 28.91 亿元人民币，向可口可乐（上海）采购浓缩液上限 65.91 / 71.83 / 84.53 亿元人民币。量能证据：成交量 125.4 万股、换手仅 0.04%，昨日站上 4.00 港元后今日回落 0.50%，整数关口未站稳。</p>
+<div class="box warn"><b>主体纠错：</b>00506 = 中粮可口可乐；太古可口可乐属太古股份 00019.HK，两家不并表、不联动。11-06 进博会「120 亿元投资、昆山 / 广州新厂」为太古事项，本期已剔除、不可套用至 00506。</div>
+<p><b>估值 · 交易与跟踪注：</b>PE-TTM 11.07（CoinDataFlow，2026-11-18）、股息率约 4.50%（TipRanks，分析日 2026-11-07）、市值 111.7 亿港元（StockAnalysis，2026-11-18）。跟踪：财务服务协议通函寄发与独立股东大会日期、德林证券独立财务顾问意见。</p>
+</div>
+
+<h3 class="sub">4.3 海底捞 06862 <span class="flag old">联名第三日 · 销量仍未披露</span></h3>
+<div class="card">
+<table><tr><th>收盘价</th><th class="num">涨跌幅</th><th class="num">市值</th><th class="num">成交额</th></tr>
+<tr><td>10.40 港元</td><td class="num up">+0.19%</td><td class="num">559.6 亿港元</td><td class="num">约 2.69 亿港元（估算）</td></tr></table>
+<p><b>特色监控 · 业态与联名：无新公告、无回购，联名销量连续第三日未披露。</b>《影之刃零》联名 11-16 上线、活动期至 12-15，三档套餐周边限量 5 万 / 15 万 / 10 万套、四人餐 389 元、闲鱼全套代购标价 599 元等存量信息无更新；截至 11-18 18:00 公司未披露全国套餐销量、核销量或售罄公告，不得以门店口述或黄牛标价外推（口径 121 延续）。量能证据出现背离：成交量 2,582 万股较 11-17 的 1,631 万股放大约 58%，股价仅 +0.19%、日内冲高 10.66 后回落——放量不涨价，热度扩散但买盘不跟价。</p>
+<div class="box"><b>估值 · 交易与跟踪注：</b>PE-TTM 11.73、股息率约 7.33%（StockEvents，2026-11-18；含特别 / 中期派息口径，引用须注）、市值 559.6 亿港元（Finnhub）。外卖 H1 收入 20.51 亿元（+121.2%、占 9.2%）为存量锚。跟踪：售罄公告与全国销量、大排档火锅西南首店、10.66 港元日内高点攻防。</div>
+</div>
+
+<h3 class="sub">4.4 保利物业 06049 <span class="flag old">无新增</span></h3>
+<div class="card">
+<table><tr><th>收盘价</th><th class="num">涨跌幅</th><th class="num">市值</th><th class="num">成交额</th></tr>
+<tr><td>26.40 港元</td><td class="num down">-0.83%</td><td class="num">约 146.1 亿港元（自算）</td><td class="num">约 968 万港元（估算）</td></tr></table>
+<p><b>特色监控 · 悦和食集与车位代理：本期无新增。</b>窗口内无新公告，悦和食集无新动态。最近重大事项为上市公司自身动作（非仅集团动作）：11-13 公告与保利发展控股续签第一期车位代理框架协议（2027–2029），2027–2029 年保证金年度上限均为 30.00 亿元、代理服务费年度上限均为 6.00 亿元，通函预计 12-15 前寄发、须独立股东批准；历史代理服务费 2024 年约 1.218 亿元、2025 年约 1.211 亿元、2026 年前九个月约 8,390 万元。量能证据：成交量 36.7 万股、换手 0.07%，昨日 +1.91% 后今日回吐 -0.83%，无放量抛售。</p>
+<div class="box"><b>估值 · 交易与跟踪注：</b>PE-TTM 7.68（Finnhub，2026-11-18；其他源 7.99–8.67，口径分歧）、股息率 4.57%（Digrin，价格基准 26.62 港元）、市值约 146.1 亿港元（26.40 × 5.5333 亿股自算；Finnhub 字段 144.0 亿）。诉讼（健康权纠纷）本期无新进展公告，连续期数待公告台账复核、不编造。跟踪：车位代理通函的历史实际保证金发生额与回收条款、临时股东大会日期、25.60 港元 52 周低支撑（现价距低点仅 +3.12%）。</div>
+</div>
+
+<h3 class="sub">4.5 同仁堂科技 01666 <span class="flag fix">主体纠错延续</span></h3>
+<div class="card">
+<table><tr><th>收盘价</th><th class="num">涨跌幅</th><th class="num">市值</th><th class="num">成交额</th></tr>
+<tr><td>3.02 港元</td><td class="num up">+0.33%</td><td class="num">37.5 亿港元</td><td class="num">约 177 万港元（估算）</td></tr></table>
+<p><b>特色监控 · 政策、集采与承诺函：01666 本身本期无新增。</b>窗口内无 01666 公告、集采履约与同业竞争承诺函新进展；窗口内亦无新政策文件落地到 01666（存量框架为 7 月《中医药振兴发展「十五五」规划》、八部门《中药工业高质量发展实施方案（2026—2030 年）》、10 月药监局中药品种保护公告）。量能证据：成交量 58.7 万股、换手 0.05%，池内成交额最低，全日区间仅 3.00–3.05 港元。</p>
+<div class="box warn"><b>主体纠错：</b>11-17 报道的「同仁堂拟 24.438 亿元收购天津同仁堂 60% 股权」主体是 A 股北京同仁堂股份（600085）向其控股股东收购、并入 600085 报表，不是 01666 的交易，不得记为同仁堂科技增量；其集采供应链表述同为 600085 / 集团层面。01666 自身同业竞争承诺函连续期数仍待历年公告台账核实，本期不写期数、不编造（口径 118 延续）。</div>
+<p><b>估值 · 交易与跟踪注：</b>PE-TTM 10.40（Finnhub，2026-11-18；另一源 9.19，口径分歧）、股息率 6.98%（上一期口径，2026-11-17；本期当日值未取到）、市值 37.5 亿港元（Finnhub）。H1 品种锚：六味地黄丸系列 +23.42%、金匮肾气丸 +42.48%、阿胶 +37.57%。跟踪：第 12 批国采 11-30 起执行的影响、01666 公告台账核实。</p>
+</div>
+
+<h3 class="sub">4.6 达势股份 01405 <span class="flag old">无新增</span></h3>
+<div class="card">
+<table><tr><th>收盘价</th><th class="num">涨跌幅</th><th class="num">市值</th><th class="num">成交额</th></tr>
+<tr><td>32.00 港元</td><td class="num down">-1.05%</td><td class="num">约 42.9 亿港元</td><td class="num">约 1,005 万港元（估算）</td></tr></table>
+<p><b>特色监控 · SSTG 与门店：本期无新增。</b>窗口内无公告、经营更新与机构观点，今日高开 33.06 后低走收 32.00、无公开催化。存量 Q3 口径（10-14 初发）：SSTG 为正、ATP 较 Q2 小幅回升；截至 09-30 门店 1,634 家、覆盖 87 城，前三季度净增 319 家、新进 27 城，全年约 350 家目标已锁定；会员 4,520 万（+37.4%）；新城市外送占比由 H1 的 25% 升至 Q3 的 30%。量能证据：成交量 31.4 万股、换手 0.24% 为池内较高，但价格高开低走，属存量换手而非增量买入。</p>
+<div class="box"><b>估值 · 交易与跟踪注：</b>PE-TTM 23.22（Finnhub，2026-11-18）、股息率—（无分红）、市值约 42.9 亿港元（Finnhub）。Q3 正式财报验证点不变：门店经营利润率能否止跌于 12.5%、四季度 SSTG 能否维持正增长、CFO 换人后财报口径。</div>
+</div>
+
+<h3 class="sub">4.7 百胜中国 09987 <span class="flag old">两连涨后回落</span></h3>
+<div class="card">
+<table><tr><th>收盘价</th><th class="num">涨跌幅</th><th class="num">市值</th><th class="num">成交额</th></tr>
+<tr><td>405.20 港元</td><td class="num down">-0.54%</td><td class="num">约 1,366 亿港元（自算）</td><td class="num">约 1.02 亿港元（估算，量待复核）</td></tr></table>
+<p><b>特色监控 · 指引切换与新业务线：本期无新公告、无新指引、无新回购披露。</b>两连涨（387.00 → 407.40）后今日回落 -0.54%。存量指引（Q3 财报 11-03 确立）：2026 年净新增门店目标上调至超过 2,400 家、年末总数有望突破 20,500 家，加盟占比 40–50%；肯悦咖啡超 4,000 家、KPRO 超 700 家、必胜汉堡超 300 家；Lavazza 香港现有 5 家、计划数月内翻倍至约 10 家。最近回购为 11-13 双市场合计 12.09 万股（港股 21,900 股 + 美股 99,000 股），授权累计已回购 1,077.64 万股（3.11%）。Q3 宣派股息 0.29 美元 / 股，除净日 11-30、派发日 12-22。</p>
+<div class="box"><b>估值 · 交易与跟踪注：</b>PE-TTM 16.94（Finnhub，2026-11-18）、股息率约 2.3%、市值约 1,366 亿港元（405.20 × 337,262,762 股自算；Finnhub 条目「17.01B HKD」为美元市值误标币种，已弃用，口径 117 延续）。AH 溢价：今日 H 收盘 405.20 港元 vs 11-17 美股线 YUMC 收盘 51.38 美元（-0.14%）按约 7.80 汇率折约 400.8 港元，H 溢价约 +1.1%（非同时点、汇率近似），较昨日的约 +1.8% 收窄。跟踪：Q4 同店「按季改善」兑现、年末 20,500 店冲刺、408.80 港元前高攻防。</div>
+</div>
+
+<h2 class="sec">五、三个商品 <span class="en">每商品含供需判断与依据</span></h2>
+<h3 class="sub">5.1 黄金</h3>
+<div class="card">
+<table>
+<tr><th>品种</th><th class="num">价格</th><th class="num">涨跌幅</th><th>时点口径</th></tr>
+<tr><td>沪金</td><td class="num">830.76 元/克</td><td class="num down">-0.09%</td><td>11-17 夜盘（对昨收 831.50）；11-18 午间快照 -1.92%（非收盘）</td></tr>
+<tr><td>沪银</td><td class="num">11,376 元/千克</td><td class="num up">+1.01%</td><td>11-17 夜盘（对昨收 11,262）；11-18 午间主连 -2.24%（非收盘）</td></tr>
+<tr><td>伦敦金现货</td><td class="num">最低 3,785 美元</td><td class="num down">盘中 -1.67%（13:00）</td><td>11-18 盘中，连续 7 日下跌</td></tr>
+<tr><td>COMEX 金（12 月）</td><td class="num">3,864.20 美元</td><td class="num up">+0.29%</td><td>美东 11-17 结算</td></tr>
+<tr><td>COMEX 银（12 月）</td><td class="num">47.357 美元</td><td class="num up">+1.06%</td><td>美东 11-17 结算</td></tr>
+<tr><td>金银比</td><td class="num">81.6</td><td class="num flat">盘中 82.5</td><td>自算：3,864.20 / 47.357 = 81.6（结算口径）；11-18 13:00 现货 3,785.10 / 45.86 = 82.5</td></tr>
+</table>
+<div class="note">11-18 日盘沪金 / 沪银正式收盘未取到（口径 125），上表内盘为夜盘与午间快照，不得当作日盘收盘引用。COMEX 近月 11 月金另一口径 3,858.80 美元（+0.30%），与 12 月活跃合约不可混用（口径 130）。</div>
+<table>
+<tr><th>三日对照</th><th class="num">11-16</th><th class="num">11-17</th><th class="num">11-18</th></tr>
+<tr><td>12 月加息 25bp 隐含概率</td><td class="num">98.6%（CME，上期口径）</td><td class="num">94%–100%（多源）</td><td class="num">约 96.4%–96.6%（CME 转引）</td></tr>
+<tr><td>美元指数</td><td class="num">约 103.41</td><td class="num">103.69（+0.13%）</td><td class="num">约 103.6–103.71（盘中）</td></tr>
+<tr><td>10Y 美债收益率</td><td class="num">约 5.15%</td><td class="num">5.10%</td><td class="num">约 5.08%–5.11%（盘中）</td></tr>
+<tr><td>现货金</td><td class="num">盘中低 3,830.74</td><td class="num">3,868.25（日内）</td><td class="num">最低 3,785（盘中）</td></tr>
+</table>
+<div class="note">概率三日值来自不同平台 / 日期 / 合约定义，逐项标注、不可连成走势线引用（口径 115 / 127 延续）。教科书链条（加息定价高 + 美元强 + 实际利率高 → 金价跌）今日完全成立，这正是本期「最不合理」之处的反面：11-17 COMEX 结算 +0.29% 与 11-18 现货 -1.67% 的方向差纯粹是时点差，不是背离。</div>
+<p><b>三种解释：</b>①利率压制说（倾向，本期主解释）——加息约 96% 定价、10Y 5.10%、美元 19 个月高位，三项同时压顶，7 连跌是定价修正而非情绪踩踏；②托底未失说——央行连续 24 个月增持、GLD 连续 3 日买入、Q3 全球央行净购金 321 吨同比 +42%，决定了跌速慢于 2022 年式崩跌；③技术破位说——3,800 整数关失守触发程序化卖盘，3,785 为盘中低点，下一支撑看 3,750 附近。本期倾向①为主、②决定下限、③解释日内斜率。</p>
+<table>
+<tr><th>机构预测（口径不可横比）</th><th class="num">2026 年末</th><th class="num">2027 年末</th><th>出处</th></tr>
+<tr><td>高盛（口径 A）</td><td class="num">—</td><td class="num">4,650 美元</td><td>BigGo / CoinTurk 11-18 转述（由 4,800 下调）</td></tr>
+<tr><td>高盛（口径 B）</td><td class="num">4,150 美元</td><td class="num">4,800 美元</td><td>BigGo 11-18 另一篇转述，与口径 A 冲突（口径 126）</td></tr>
+<tr><td>摩根士丹利</td><td class="num">—</td><td class="num">5,250 美元</td><td>BigGo 转述</td></tr>
+</table>
+<div class="box warn"><b>供需判断 · 央行购金 vs 利率压制：压顶仍大于托底，但托底在变厚。</b>需求端：中国央行连续 24 个月增持、10 月 +83 万盎司（约 25.8 吨）为重启以来单月最大，前 10 月累计约 +129 吨；全球央行 Q3 净购 321 吨创 2024 Q4 以来单季新高；GLD 持仓 1,048.68 吨、11 月至今净 +7.03 吨。压制端：12 月加息约 96% 定价、10Y 5.10%、美元 103.69。判断：央行购金是「跌多了有人接」的下限逻辑，不是「现在就该涨」的上限逻辑；关键变量依次为今晚 FOMC 纪要措辞、3,785 盘中低点能否守住、12 月初公布的 11 月央行储备数据。</div>
+</div>
+
+<h3 class="sub">5.2 铁矿石</h3>
+<div class="card">
+<table>
+<tr><th>合约（2701）</th><th class="num">收盘</th><th class="num">对昨收</th><th class="num">对昨结</th></tr>
+<tr><td>铁矿石 I2701</td><td class="num">646.0 元/吨</td><td class="num up">+0.86%</td><td class="num up">+0.08%（昨结 645.5）</td></tr>
+<tr><td>焦炭 J2701</td><td class="num">1,896.5 元/吨</td><td class="num down">-1.63%</td><td class="num down">-1.71%（昨结 1,929.5）</td></tr>
+<tr><td>焦煤 JM2701</td><td class="num">1,364.0 元/吨</td><td class="num down">-3.71%</td><td class="num down">-3.98%（昨结 1,420.5）</td></tr>
+<tr><td>螺纹 RB2701</td><td class="num">2,977 元/吨</td><td class="num up">+0.40%</td><td class="num flat">-0.03%（昨结 2,978）</td></tr>
+<tr><td>热卷 HC2701</td><td class="num">3,112 元/吨</td><td class="num up">+0.10%</td><td class="num down">-0.13%（昨结 3,116）</td></tr>
+</table>
+<div class="note">11-18 价格为钢之家期货频道收盘快照、双口径按昨收（11-17 金融界日盘表）与快照昨结自算，待交易所官方收盘表复核（口径 125）。昨收基准：铁矿 640.5 / 焦炭 1,928 / 焦煤 1,416.5 / 螺纹 2,965 / 热卷 3,109。现货：11-18 日照港 PB 粉 626 元/湿吨（+6，Mysteel 早报）。</div>
+<table>
+<tr><th>库存与需求（Mysteel，11-13 当周）</th><th class="num">数值</th><th>变化</th></tr>
+<tr><td>47 港进口铁矿库存</td><td class="num">17,759.47 万吨</td><td>环比 +226.27 万吨，连增两周</td></tr>
+<tr><td>日均疏港量</td><td class="num">319.52 万吨</td><td>-1.63 万吨</td></tr>
+<tr><td>247 家钢厂日均铁水</td><td class="num">230.32 万吨</td><td>-0.37 万吨，连降四周</td></tr>
+<tr><td>钢厂盈利率</td><td class="num">11.26%</td><td>持平，近九成亏损（待复核，口径 122 延续）</td></tr>
+<tr><td>螺纹产量 / 总库存 / 表观需求</td><td class="num">182.82 / 466.04 / 199.15 万吨</td><td>环比 -3.08 / -16.33 / -1.65 万吨，供需双弱</td></tr>
+</table>
+<div class="box alert"><b>供需判断 · 库存 + 铁水 + 成本端三方结论：支撑脆，补跌未解除。</b>库存端：47 港 1.776 亿吨处历史高位区、连增两周合计 +470 万吨；需求端：铁水 230.32 万吨连降四周、邯郸秋冬季管控与河北重污染应急仍在执行，11-18 当日无新增限产文件、也无放松信号；成本端：焦炭第三轮提降已落地（湿熄 -50 / 干熄 -55 元/吨）、第四轮预期 11 月下旬启动，焦煤今日 -3.98% 显示成本塌方在加速。今日铁矿 +0.86% 只是跌深后的相对抗跌。补跌触发条件：铁水确认跌破 230 万吨，或下一周（约 11-20 发布）库存再增超 200 万吨，任一兑现即打开 640 下方空间；反之若铁水企稳且疏港回升至 325 万吨上方，支撑才由脆转实。</div>
+</div>
+
+<h3 class="sub">5.3 豆粕</h3>
+<div class="card">
+<table>
+<tr><th>品种</th><th class="num">价格</th><th class="num">涨跌幅</th><th>时点口径</th></tr>
+<tr><td>豆粕 M2701</td><td class="num">3,115 元/吨</td><td class="num up">+0.84%</td><td>11-17 夜盘（对昨收 3,089）；11-18 日盘收盘未取到（口径 125）</td></tr>
+<tr><td>豆粕 M2701（对照）</td><td class="num">3,081 元/吨</td><td class="num down">-1.60%（对昨结 3,131）</td><td>11-17 日盘收盘（金融界）</td></tr>
+<tr><td>远月 M2705 / 1–5 价差</td><td class="num">—</td><td class="num">—</td><td>当日逐合约值未取到；油厂 5–7 月提货报价 M2705+20 至 +70 元/吨侧证</td></tr>
+<tr><td>CBOT 大豆</td><td class="num">12.255 美元/蒲式耳</td><td class="num flat">—</td><td>美东 11-17 收盘（Yahoo 日线口径）</td></tr>
+<tr><td>现货（沿海一口价）</td><td class="num">3,040–3,160 元/吨</td><td class="num down">11-17 普跌 30–50 元</td><td>盘锦 3,160 / 天津 3,140 / 日照 3,060 / 南通 3,050 / 东莞 3,040；基差 -50 至 +80 元/吨</td></tr>
+<tr><td>菜粕</td><td class="num">—</td><td class="num up">夜盘 +0.22%</td><td>具体收盘价未取到；11-17 日盘 -0.70%</td></tr>
+</table>
+<p><b>本期新增利多 / 利空与性质：</b>利多属「成本端」——USDA 11 月 WASDE（11-10）美豆单产上调至 53.3 蒲式耳 / 英亩但出口上调、期末库存下调至 3.00 亿蒲式耳（预期 3.32 亿）、库消比 6.5%，季均价上调至 12.10 美元；利空属「需求与供给端」——国内豆粕库存高位、11 月到港预估 949.65 万吨。成本塌方与需求走弱的传导不同：本期是外盘成本托底、内盘现货走弱，两者对冲，结果是盘面夜盘跟涨、现货基差分化。</p>
+<table>
+<tr><th>库存与榨利（Mysteel，截至 11-13）</th><th class="num">数值</th><th>注</th></tr>
+<tr><td>豆粕库存</td><td class="num">134.69 万吨</td><td>处高位，下游库存约 7 天随用随采</td></tr>
+<tr><td>进口大豆库存</td><td class="num">795.39 万吨</td><td>10 月到港 811.85 万吨，11 月预估 949.65 万吨</td></tr>
+<tr><td>开机率</td><td class="num">约 70%（周度）/ 50.63%（日度全样本，11-16）</td><td>两套口径不可混用</td></tr>
+<tr><td>盘面榨利</td><td class="num">约 -44 元/吨</td><td>11 月上旬口径，即时新值未取到</td></tr>
+</table>
+<div class="box warn"><b>供需判断 · USDA / 巴西 / 榨利与两头夹：涨不动、跌不深。</b>上方：国内库存 134.69 万吨 + 到港高峰 + 榨利为负抑制油厂挺价，M2701 夜盘 3,115 元已接近区间上沿；下方：WASDE 库消比 6.5% 为近年偏紧口径、巴西播种进度 66.8%（CONAB，截至 11-06）虽快于去年但巴拉那优良率 84% 低于去年 91%，强厄尔尼诺下天气溢价未完全出清。巴西产量口径分歧大（USDA 186.0 MMT vs CONAB 181.6 MMT），引用须带出处。判断：区间震荡延续，突破需要现货基差与库存去化同向确认，单靠 WASDE 利多不够。</div>
+</div>
+
+<h2 class="sec">六、口径提醒 <span class="en">本期新增 8 条 · 累计 130 条</span></h2>
+<div class="card">
+<p>口径编号自本期 123 起编，累计 130 条。历史累计已归档 18 条（①–⑱，见 2026-11-08 第 46 期与 2026-11-09 第 47 期）；⑲–㉛（13 条）见 2026-11-10 第 48 期；㉜–㊺（14 条）见 2026-11-11 第 49 期；㊻–61（16 条）见 2026-11-12 第 50 期；62–75（14 条）见 2026-11-13 第 51 期；76–90（15 条）见 2026-11-14 第 52 期；91–100（10 条）见 2026-11-15 第 53 期；101–111（11 条）见 2026-11-16 第 54 期；112–122（11 条）见 2026-11-17 第 55 期。</p>
+<p><b>123 京东财报闭环：</b>上期口径 112 的「实际数字未检索到」本期闭环——京东 Q3 实际为收入 3,096 亿元（+3.5%）、经营利润 52 亿元、非 GAAP 归母净利 83 亿元（+43%），以业绩公告经新浪科技 / MoneyDJ 11-18 报道为准；上期所列一致预期（营收约 460–464 亿美元）为美元口径，与人民币实际不可直接比大小。</p>
+<p><b>124 两股涨跌幅源差：</b>00506 与 09987 本期涨跌幅按上一期收盘（4.00 / 407.40 港元）自算为 -0.50% / -0.54%；个别源以前收 3.975 / 407.20 得出 +0.13% / -0.49%，差异源于前收取值（上一期收盘的四舍五入），本期统一用自算口径并在此披露。</p>
+<p><b>125 期货 11-18 日盘收盘源缺口（本期最需警惕，见下方单列）：</b>制表时点公开源尚未收录 11-18 日盘官方收盘汇总：黄金 / 豆粕只有夜盘与午间快照，铁矿五合约用钢之家收盘快照并标注待复核；三者均不得当作交易所官方收盘引用，下期须以官方表回补核对。</p>
+<p><b>126 高盛黄金目标价两篇冲突：</b>11-18 两篇转述互相打架（2027 年末 4,650 美元 vs 2026 年末 4,150 / 2027 年末 4,800 美元），本期并列呈现并标出处，不取其一冒充定稿；机构预测表各行口径不可横比。</p>
+<p><b>127 加息概率多源区间延续：</b>本期 12 月 +25bp 概率 11-17 多源为 94%–100%、11-18 CME 转引约 96.4%–96.6%，与上期口径 115 同理：只写区间与来源，不连成走势线、不写单点差值。</p>
+<p><b>128 海吉亚股息率未采纳第三方快照：</b>Eulerpool 快照出现约 1.79% 股息率，与公司「回报以回购为主、无常规分红」的存量口径冲突，本期维持「—（无分红）」，待公司派息公告原文核实后再改。</p>
+<p><b>129 百胜成交量快照时点偏早：</b>09987 的 11-18 成交量（251,028 股）来自 13:03 快照，可能不完整，第三 / 四章成交额与换手按此估算、可信度低于其余 6 家，下期以完整日线复核。</p>
+<p><b>130 COMEX 金双合约口径：</b>11-17 结算 12 月金 3,864.20 美元（+0.29%）与近月 11 月金 3,858.80 美元（+0.30%）为不同合约，本期金银比用 12 月金结算自算 81.6；另有转引源所称 COMEX 金 3,819.1 美元（-0.88%）与三源一致的结算口径冲突，已剔除。</p>
+<div class="box alert"><b>本期最需警惕的一条：口径 125 —— 期货收盘源缺口。</b>本期商品章有三处价格不是交易所官方日盘收盘：沪金 / 沪银与豆粕为夜盘 + 午间快照，铁矿五合约为钢之家快照。若把快照当收盘引用，涨跌幅与位置线都会系统性失真；下期生成时第一件事是以官方收盘表回补今日数值并核对差异，差异超过 0.5% 须在下期口径章单列纠正。</div>
+</div>
+
+<h2 class="sec">七、下期跟踪清单 <span class="en">10 行 + JOYY 触发检查</span></h2>
+<div class="card">
+<table>
+<tr><th>跟踪项</th><th>待验证 / 待跟踪</th></tr>
+<tr><td>海吉亚医疗 06078</td><td>11-21 回购暂止期届满后是否重启回购；5 亿元 / 年回报承诺年末执行缺口；三季度经营数据</td></tr>
+<tr><td>中国食品 00506</td><td>财务服务协议通函寄发与独立股东大会日期；德林证券独立财务顾问意见；4.00 港元整数关二次攻防</td></tr>
+<tr><td>海底捞 06862</td><td>联名售罄公告与全国销量披露（活动期至 12-15）；放量不涨价能否延续；大排档火锅西南首店</td></tr>
+<tr><td>保利物业 06049</td><td>车位代理通函（12-15 前）：历史实际保证金发生额、回收与逾期条款；临时股东大会日期；25.60 港元 52 周低支撑</td></tr>
+<tr><td>同仁堂科技 01666</td><td>01666 自身公告台账核实（承诺函期数补录）；第 12 批国采 11-30 起执行的影响；600085 收购天津同仁堂股东会（仅集团背景，不并表）</td></tr>
+<tr><td>达势股份 01405</td><td>Q3 正式财报与门店经营利润率能否止跌于 12.5%；四季度 SSTG 能否维持正增长</td></tr>
+<tr><td>百胜中国 09987</td><td>Q4 同店「按季改善」兑现；11-30 除净前走势；AH 溢价方向（须同日汇率重算）；408.80 港元前高攻防</td></tr>
+<tr><td>黄金</td><td>今晚 FOMC 纪要措辞；3,785 盘中低点与 3,850 收复攻防；11 月央行购金数据（12 月初公布）；期货官方收盘回补（口径 125）</td></tr>
+<tr><td>铁矿石</td><td>下一周 47 港库存（约 11-20 发布，是否再增超 200 万吨）；铁水是否确认跌破 230 万吨；焦炭第四轮提降是否发起；646 元攻防</td></tr>
+<tr><td>豆粕</td><td>第 47 周库存与开机率（去库是否启动）；M2705 与 1–5 价差当日值补数；巴西天气与播种进度；现货基差方向</td></tr>
+<tr><td>JOYY 触发检查</td><td>美东 2026-11-17 收盘 78.78 美元（Finnhub / MarketBeat / Stockwatch 三源一致），&gt; 75.00 美元，未触发；距触发位 +3.78 美元（+5.04%）。只留本行，不进核心结论。</td></tr>
+</table>
+<p><b>位置线（下方支撑 / 今收 / 上方压力）：</b>上证 3,550 / 3,587.83 / 3,602.57 · 创业板 2,250 / 2,311.62 / 2,320.02 · 科创50 1,221.19 / 1,247.99 / 1,280 · 恒指 23,208（11-18 盘中低）/ 23,294.75 / 23,508.17 · 恒科 3,700 / 3,736.33 / 3,758.17 · 黄金 3,785（11-18 盘中低）/ 3,864.20（COMEX 11-17 结算）/ 3,884.25 · 白银 45.56（11-18 盘中）/ 47.357（COMEX 11-17 结算）/ 49.12 · 金银比 79 / 81.6（结算口径）/ 82.5（盘中）· 铁矿 620 / 646.0 / 650（11-18 日内高）· 螺纹 2,900 / 2,977 / 3,014.00 · 焦煤 1,364（今收即日内低位区）/ 1,364 / 1,416.50 · 焦炭 1,896.5 / 1,896.5 / 1,928.00 · 豆粕 3,050 / 3,115（夜盘）/ 3,131（11-17 昨结）· 1–5 价差 280 / —（本期未取到）/ 320 · WTI 83 / 86.01（11-17 结算）/ 88.92 · Brent 90 / 93.14（11-17 结算）/ 95.84 · 百胜H 396.00 / 405.20 / 408.80 · 海吉亚 10.53 / 10.66 / 10.78 · 海底捞 10.30 / 10.40 / 10.66 · 保利 25.60 / 26.40 / 26.72</p>
+</div>
+
+<footer>
+<p><b>数据时点说明：</b>① 真增量（当日收盘）：港股 7 只与港股 / A 股大盘、亚太指数、铁矿石 / 焦炭 / 焦煤 / 螺纹 / 热卷（钢之家快照，待官方复核）均为 2026-11-18 收盘（A 股 15:00、港股 16:00、国内期货日盘 15:00）。② 非收盘（仅供参考）：现货金 11-18 盘中最低 3,785 美元与 13:00 快照、沪金 / 沪银夜盘与午间快照、豆粕 M2701 夜盘 3,115 元、NVDA 盘后约 162.9 美元、原油 11-18 早盘价；01666 股息率沿用上一期口径（2026-11-17），已标注。③ 美股时点：美股指数、NVDA、台积电 ADR、YUMC、JOYY、COMEX 金 / 银结算、CBOT 大豆、WTI / Brent 结算均为美东 2026-11-17 收盘（北京时间 2026-11-18 凌晨）。本期新闻窗口为 2026-11-17 18:00 至 2026-11-18 18:00。</p>
+<p><b>行情来源：</b>Finnhub、StockAnalysis、金融界、财联社、新浪财经、钜亨网、韩国交易所、Mysteel、钢之家、SMM、Cboe 相关口径、CME FedWatch 转引、SPDR 官方存档、世界黄金协会。</p>
+<p><b>新闻来源：</b>英伟达公司发布、京东业绩公告、商务部 BIS 规则文本转述、新华社、第一财经、证券时报、格隆汇、智通财经、MoneyDJ、路透社、FXStreet、USDA WASDE、Mysteel 周报。</p>
+<p><b>免责声明：</b>本推送为信息聚合与个人研究记录，不构成任何投资建议。所有第三方预测均标注来源，不代表本推送观点。文中「自算」「折算」「估算」数值为按公开数据自行计算，仅供参考；口径差异已在第六章逐项说明。</p>
+<p><b>制表：</b>小昊 · 第 56 期 · 2026-11-18 18:00 · 常规版</p>
+</footer>
+</div>
+</body>
+</html>
